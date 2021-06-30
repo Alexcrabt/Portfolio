@@ -121,11 +121,6 @@ ul.navbar li a:focus{
     font-size: 4.8vh;
 }
 
-
-
-
-
-
 /*Intro*/
 .intro{
     display: grid;
@@ -688,29 +683,60 @@ footer p{
 }
 
 @media(max-width: 420px){
-   /*Navbar*/
-   .nav-btn{
-    padding: 0;
-}
+    /*Navbar*/
+    .nav-btn{
+        padding: 0;
+    }
 
-.nav-text{
-    font-size: .6em;
-    padding-top: .5em;
-    display:block;
-}
+    .nav-text{
+        font-size: .6em;
+        padding-top: .5em;
+        display:block;
+    }
 
-.iconify{
-    font-size: 4vh
-}
+    .iconify{
+        font-size: 4vh
+    }
     /*Intro*/
 
     /*About*/
-    .about-me{
-        
+    #sidebar-l, #sidebar-r{
+        padding-top: 155px;
+    }
+
+    #sidebar-l.open, #sidebar-r.open{
+        width: 15%;
+    }
+    .about-sidebar h5{
+        font-size: 1.6vh;
+    }
+    .about-sidebar p{
+        font-size: 1vh;
+    }
+    .about-sidebar p .iconify{
+        font-size: 1vh;
+    }
+    .about-img{
+        min-width: 30vh;
+        max-height: 30vh;
+
     }
     /*Projects*/
 
     /*Contact*/
+    .column {
+        float: none;
+        width: 95%;
+      }
+      
+    .right { 
+        width: 95%; 
+        }
+
+    #submit-input{
+        margin-left: 2.5%;    
+        width: 95%;
+        }
 
     /*Footer*/
 }
