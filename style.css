@@ -211,7 +211,7 @@ ul.navbar li a:focus{
 
 #sidebar-l.open {
     text-align: center;
-    width: 12%
+    width: 12%;
 }
 
 .about-me{
@@ -273,7 +273,7 @@ ul.navbar li a:focus{
     font-size: 3vh;
 }
 .about-sidebar p .iconify{
-    font-size: 2vh;
+    font-size: 4vh;
 
 }
 
