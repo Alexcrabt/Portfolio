@@ -6,8 +6,7 @@ const img= new Image()
 img.src= "./Coffee_Space.jpg";
 img.onload = () => {ctx.drawImage(img, 0, 0, img.width, img.height
                                     , 0, 0, canvas.width, canvas.height);};
-
-
+                          
 //Filter Website
 function filterSelectionNavbar(elem) {
   var sect = document.getElementsByClassName("sect");

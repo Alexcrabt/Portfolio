@@ -188,6 +188,7 @@ ul.navbar li a:focus{
     width: 0;
     line-height: 1.5em;
     padding-top: 70px;
+    list-style-type: none;
 }
 
 #sidebar-l{
@@ -197,6 +198,7 @@ ul.navbar li a:focus{
     width: 0;
     line-height: 1.5em;
     padding-top: 70px;
+    list-style-type: none;
 }
 
 #sidebar-r.open {
@@ -208,6 +210,11 @@ ul.navbar li a:focus{
     text-align: center;
     width: 12%;
 }
+
+#text {
+    width: 70%;
+    margin: 0 auto 0 auto;
+  }
 
 .about-me{
     padding-top: 20px;
@@ -234,11 +241,16 @@ ul.navbar li a:focus{
 }
 
 .ed2{
-    font-size: 2vh;
+    font-size: 3vh;
     margin-top: -20px;
 }
 
 .ed3{
+    font-size: 2vh;
+    margin-top: -20px;
+}
+
+.ed4{
     font-size: 2vh;
     margin-top: -20px;
 }
@@ -252,8 +264,11 @@ ul.navbar li a:focus{
 .ex1{
     font-size: 3vh;
 }
-
 .ex2{
+    font-size: 3vh;
+    margin-top: -20px;
+}
+.ex3{
     font-size: 2vh;
     margin-top: -20px;
 }
@@ -264,12 +279,22 @@ ul.navbar li a:focus{
     text-decoration: underline;
 }
 
-.about-sidebar p{
-    font-size: 3vh;
+.about-sidebar li{
+    padding: .5em;
 }
-.about-sidebar p .iconify{
-    font-size: 4vh;
 
+.side-text{
+    display: none;
+    text-align: center;
+    margin-top: -12px;
+    padding-top: .5em;
+    font-size: 3vh;
+    position: relative;
+    
+}
+
+.about-sidebar li .iconify{
+    font-size: 5vh;
 }
 
 .about-img{
@@ -308,12 +333,6 @@ ul.navbar li a:focus{
     margin: 0 auto 0 auto;
   }
 */
-
-#text {
-    width: 70%;
-    margin: 0 auto 0 auto;
-  }
-
 
 #canvas {
     width: 100%;
@@ -429,7 +448,7 @@ ul.navbar li a:focus{
 .iconify[data-icon=logos-github-icon]{
     background: #fff;
     color:#000;
-    font-size: 20px;
+    font-size: 5vh;
 
 }
 .iconify[data-icon=logos-github-icon]:hover{
@@ -526,11 +545,11 @@ footer p{
         height: 65px;
     }
 
-    li:hover .nav-text{
+    ul.navbar li:hover .nav-text{
         color:rgb(38, 207, 38);
         display:block;
     }
-    li:hover .iconify{
+    ul.navbar li:hover .iconify{
         color:rgb(38, 207, 38);
     }
 
@@ -540,9 +559,14 @@ footer p{
     }
 
     /*About*/
-    .about-me{
-        
+    .about-sidebar li:hover .side-text{
+        color:rgb(38, 207, 38);
+        display:block;
     }
+    .about-sidebar li:hover .iconify{
+        color:rgb(38, 207, 38);
+    }
+    
     /*Projects*/
 
     /*Contact*/
@@ -604,13 +628,10 @@ footer p{
         text-decoration: underline;
     }
     
-    .about-sidebar p{
-        font-size: 2vh;
+    .side-text{
+        font-size: 2.4vh;
     }
-    .about-sidebar p .iconify{
-        font-size: 1.8vh;
-    
-    }
+   
     .abt-column {
         width: 100%;
       }
@@ -698,32 +719,118 @@ footer p{
         font-size: 4vh
     }
     /*Intro*/
+    .intro{
+        width:95%;
+    }
+    .intro-text h1{
+        font-size: 6vh;
+        font-weight: 400;
+        margin-top: -60px;
+    }
+    
+    .intro-text h2{
+        font-size: 4vh;
+    }
+    
+    .intro-text h3{
+        font-size: 4vh;
+    }
+    
+    .intro-text h5{
+        font-size: 3vh;
+    }
 
     /*About*/
+    .about h1{
+        font-size: 6vh;
+    }
+    .about-img{
+        min-width: 25vh;
+        max-height: 25vh;
+
+    }
+    .btn-hob{
+        font-size: 2.2vh;
+        width:14vh
+    }
+    .about-me p{
+        font-size: 2.5vh;
+        text-align: center;
+    }
     #sidebar-l, #sidebar-r{
-        padding-top: 155px;
+        padding-top: 50px;
     }
 
     #sidebar-l.open, #sidebar-r.open{
         width: 15%;
     }
+
     .about-sidebar h5{
         font-size: 1.6vh;
     }
-    .about-sidebar p{
+    .side-text{
+        display: block;
         font-size: 1vh;
+        white-space:nowrap;
     }
-    .about-sidebar p .iconify{
-        font-size: 1vh;
+    .about-sidebar li .iconify{
+        font-size: 4vh;
+        
     }
-    .about-img{
-        min-width: 30vh;
-        max-height: 30vh;
+    .ed{
+        font-size: 3vh;
 
     }
+    
+    .ed1, .ed2{
+        font-size: 2.3vh;
+    }
+    
+    .ed3{
+        font-size: 2vh;
+
+    }
+    
+    .ed4{
+        font-size: 1.6vh;
+
+    }
+    
+    .ex{
+        font-size: 3vh;
+    }
+    
+    .ex1, .ex2{
+        font-size: 2.3vh;
+    }
+    
+    .ex3{
+        font-size: 2vh;
+    }
+    
     /*Projects*/
+    .projects-text h1{
+        font-size: 6vh;
+    }
+    .btn-proj{
+        font-size: 2.2vh;
+        width:14vh;
+    }
+    .card-text{
+        font-size: 1.9vh;
+    }
+    .card-lang{
+        font-size: 1.9vh;
+    }
 
     /*Contact*/
+    .contact-text h1{
+        font-size: 6vh;
+        font-weight: 400;
+    }
+    .contact-text p{
+        font-size: 3vh;
+    }
     .column {
         float: none;
         width: 95%;
@@ -739,6 +846,9 @@ footer p{
         }
 
     /*Footer*/
+    footer p{
+        font-size: 2vh;
+    }
 }
 
 @media(max-width: 320px){
