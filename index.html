@@ -7,19 +7,13 @@
         <meta name= "viewport" content="width=device-width, initial-scale=1.0">
         <title>Alexander Crabtree</title>
         <!-- BOOTSTAP CSS AND JQUERY JS FILES -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <!-- FONT AWESOME  -->
-        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.css"
-            integrity="sha256-6Wozb/CzRANFOaGqN+u/uRT7kcffVIQt9OhOuuA6I9o=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
         <!-- Owl Carousel CSS-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-            integrity="sha256-qvCL5q5O0hEpOm1CgOLQUuHzMusAZqDcAZL9ijqfOdI=" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-            integrity="sha256-nXBV7Gr2lU0t+AwKsnS05DYtzZ81oYTXS6kj7LBQHfM=" crossorigin="anonymous" />
+
         <!-- CSS -->
         <link rel="stylesheet" href="style.css">
         <!--Icons-->
@@ -31,13 +25,13 @@
         
         <!--Navigation-->
         <nav class="nav">
-            <ul class="navbar">
-                <li><a href="#intro"><button class="nav-btn" onclick="filterSelectionNavbar('intro')"><span class="iconify" data-icon="fa-home" data-inline="True"></span><div class="nav-text">Home</div></button></a></li>
-                <li><a href="#about"><button class="nav-btn" onclick="filterSelectionNavbar('about')"><span class="iconify" data-icon="bi:person-lines-fill" data-inline="True"></span><div class="nav-text">About Me</div></button></a></li>
-                <li><a href="#projects"><button class="nav-btn" onclick="filterSelectionNavbar('projects')"><span class="iconify" data-icon="clarity:briefcase-solid" data-inline="True"></span><div class="nav-text">Projects</div></button></a></li>
-                <li><a href="#contact"><button class="nav-btn" onclick="filterSelectionNavbar('contact')"><span class="iconify" data-icon="clarity:email-solid" data-inline="True"></span><div class="nav-text">Contact Me</div></button></a></li>
-                <li><a href="./Resume.pdf"><span class="iconify" data-icon="carbon:document-pdf" data-inline="True"></span></a><div class="nav-text">Resume</div></li>
-                <!--<li><button class="nav-btn icon" onclick="responsiveNav()"><span class="iconify" data-icon="ant-design:bars-outlined" data-inline="false"></span></button></li>-->
+            <button class="nav-tog " type="button" data-toggle="collapse" data-target=".navbar"><span class="iconify" data-icon="ant-design:bars-outlined" data-inline="false"></span></button>
+            <ul class="navbar collapse d-sm-inline-flex d-md-inline-flex">
+                <li><a href="#intro"><button class="nav-btn" onclick="filterSelectionNavbar('intro')" data-toggle="collapse" data-target=".navbar"><span class="iconify" data-icon="fa-home" data-inline="True"></span><div class="nav-text">Home</div></button></a></li>
+                <li><a href="#about"><button class="nav-btn" onclick="filterSelectionNavbar('about')" data-toggle="collapse" data-target=".navbar"><span class="iconify" data-icon="bi:person-lines-fill" data-inline="True"></span><div class="nav-text">About Me</div></button></a></li>
+                <li><a href="#projects"><button class="nav-btn" onclick="filterSelectionNavbar('projects')" data-toggle="collapse" data-target=".navbar"><span class="iconify" data-icon="clarity:briefcase-solid" data-inline="True"></span><div class="nav-text">Projects</div></button></a></li>
+                <li><a href="#contact"><button class="nav-btn" onclick="filterSelectionNavbar('contact')" data-toggle="collapse" data-target=".navbar"><span class="iconify" data-icon="clarity:email-solid" data-inline="True"></span><div class="nav-text">Contact Me</div></button></a></li>
+                <li><a href="./Resume.pdf"><button class="nav-btn"><span class="iconify" data-icon="carbon:document-pdf" data-inline="True" data-toggle="collapse" data-target=".navbar"></span><div class="nav-text">Resume</div></button></a></li>
             </ul>
         </nav>
         
@@ -108,7 +102,7 @@
                     </div>
                     <div class="abt-column abt-right">
                         <h4 class="ex">Experience</h4>
-                        <p class="ex1">Undergrad Research Assistant</p>
+                        <p class="ex1">Research Assistant</p>
                         <p class="ex2">Aug 2020-Current</p>
                         <p class="ex3">Texas A&M AGGIENOVA, Texas</p>
                         <br>

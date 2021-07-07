@@ -69,37 +69,44 @@ section{
 .nav{
     position: fixed;
     top: 0;
-    height: 54px;
+    height: 55px;
     background: #505050;
     width: 100%;
     z-index: 50;
 
 }
-ul.navbar{
+.navbar{
     list-style-type: none;
     margin: 1px;
     padding: 1px;
+
 }
 
 .nav-btn{
     border:none;
-    padding: 0 1rem;
+    padding: 0 2rem;
     color: rgb(100, 216, 255);
     background-color: transparent;
+
+}
+
+.nav-tog{
+    border:none;
+    padding: 0 2rem;
+    color: rgb(100, 216, 255);
+    background-color: transparent;
+    display: none;
 }
 
 .nav-btn:focus{
     outline: none;
 }
 
-ul.navbar li a{
-    padding: 0.5rem 1rem;
-    color: rgb(100, 216, 255);
-    opacity: 1;
-    text-decoration: none;
+.nav-tog:focus{
+    outline: none;
 }
 
-ul.navbar div{
+.navbar div{
     color: rgb(100, 216, 255);
 }
 
@@ -113,7 +120,7 @@ ul.navbar div{
     
 }
 
-ul.navbar li a:focus{
+.navbar li a:focus{
     outline: none;
 }
 
@@ -539,17 +546,17 @@ footer p{
 
 /*Media screen*/
 
-@media(max-width: 1600px){
+@media(max-width: 2000px){
     /*Navbar*/
     .navbar{
         height: 65px;
     }
 
-    ul.navbar li:hover .nav-text{
+    .navbar li:hover .nav-text{
         color:rgb(38, 207, 38);
         display:block;
     }
-    ul.navbar li:hover .iconify{
+    .navbar li:hover .iconify{
         color:rgb(38, 207, 38);
     }
 
@@ -666,9 +673,7 @@ footer p{
     /*Intro*/
     
     /*About*/
-    .ed1, .ex1{
-        
-    }
+
     /*Projects*/
 
     /*Contact*/
@@ -678,19 +683,52 @@ footer p{
 
 @media(max-width: 576px){
     /*Navbar*/
-    .nav-btn{
-        padding: 0 0.5rem;
+    .nav{
+        height: 40px;
     }
+    .navbar{
+        display: inline-block;
+        margin-top: 40px;
+        background: #505050;
+        height: auto;
+        width: 100%;
+
+    }
+    .nav-btn{
+        padding: 0.5rem 2rem;
+    }
+
+    .nav-tog{
+        font-size: 4.3vh;
+        display: block;
+        position: fixed;
+    }
+
+    .navbar li:hover .nav-text{
+        color: unset;
+        display: unset;
+
+    }
+    .navbar li:hover .iconify{
+        color: unset;
+        
+    }
+
+    .nav-text{
+        padding: 0 1rem;
+        font-size: 1em;
+        display: inline-flex;
+    }
+
     .iconify{
         font-size: 4.3vh;
+        
     }
 
     /*Intro*/
 
     /*About*/
-    .about-me{
-        
-    }
+
     .card-grid{
         grid-template-columns: 1fr;
         grid-gap: 10px;
@@ -705,14 +743,17 @@ footer p{
 
 @media(max-width: 420px){
     /*Navbar*/
-    .nav-btn{
-        padding: 0;
+    .nav{
+        height: 55px;
+    }
+    .navbar{
+        margin-top: 50px;
     }
 
     .nav-text{
-        font-size: .6em;
-        padding-top: .5em;
-        display:block;
+        padding: 0 1rem;
+        font-size: 1em;
+        display:inline-flex;
     }
 
     .iconify{
@@ -847,20 +888,17 @@ footer p{
 
     /*Footer*/
     footer p{
-        font-size: 2vh;
+        font-size: 2.3vh;
     }
 }
 
 @media(max-width: 320px){
     /*Navbar*/
-    .nav-btn{
-        padding: 0;
+    .nav{
+        height: 35px;
     }
-
-    .nav-text{
-        font-size: .54em;
-        padding-top: .5em;
-        display:block;
+    .navbar{
+        margin-top: 35px;
     }
 
     .iconify{
@@ -869,9 +907,7 @@ footer p{
     /*Intro*/
 
     /*About*/
-    .about-me{
-        
-    }
+
     /*Projects*/
 
     /*Contact*/
