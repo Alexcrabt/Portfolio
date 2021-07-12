@@ -546,7 +546,7 @@ footer p{
 
 /*Media screen*/
 
-@media(max-width: 2000px){
+@media(max-width: 2700px){
     /*Navbar*/
     .nav{
         height: 72px;
