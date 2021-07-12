@@ -583,6 +583,22 @@ footer p{
     /*Footer*/
 }
 
+@media(max-width: 1670px){
+
+}
+
+@media(max-width: 1600px){
+
+}
+
+@media(max-width: 1450px){
+
+}
+
+@media(max-width: 1025px){
+
+}
+
 @media(max-width: 990px){
     /*Intro*/
 
@@ -752,8 +768,7 @@ footer p{
     }
 
     .iconify{
-        font-size: 4.5vh;
-        
+        font-size: 4.5vh; 
     }
 
     /*Intro*/
@@ -765,7 +780,6 @@ footer p{
     .about-img{
         min-width: 40vh;
         max-height: 40vh;
-
     }
     .about-me p{
         text-align: center;
@@ -804,7 +818,7 @@ footer p{
     .contact-text h1{
         font-size: 8vh;
     }
-
+}
 
 @media(max-width: 420px){
     /*Navbar*/
@@ -939,16 +953,16 @@ footer p{
     .column {
         float: none;
         width: 95%;
-      }
+    }
       
     .right { 
         width: 95%; 
-        }
+    }
 
     #submit-input{
         margin-left: 2.5%;    
         width: 95%;
-        }
+    }
 
     /*Footer*/
     footer p{
