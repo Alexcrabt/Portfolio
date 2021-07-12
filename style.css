@@ -75,8 +75,8 @@ section{
 }
 .navbar{
     list-style-type: none;
-    margin: 1px;
-    padding: 1px;
+    margin: .4%;
+    padding: .4%;
 
 }
 
@@ -113,7 +113,7 @@ section{
     text-align: center;
     margin-top: -12px;
     padding-top: .2em;
-    font-size: 1em;
+    font-size: 100%;
     position: relative;
     
 }
@@ -123,7 +123,7 @@ section{
 }
 
 .iconify{
-    font-size: 4.8vh;
+    font-size: 200%;
 }
 
 /*Intro*/
@@ -139,7 +139,7 @@ section{
     display: grid;
     color:rgb(100, 216, 255);
     height: 100%;
-    padding-top: 60px;
+    padding-top: 6.2%;
 
 }
 
@@ -589,10 +589,10 @@ footer p{
 
 }
 
-@media(max-width: 1600px){
+@media screen and (max-width: 1600px){
     /*Navbar*/
     .nav{
-        height: 58px;
+        height: 8.5%;
     }
 }
 
@@ -680,14 +680,19 @@ footer p{
 
 @media(max-width: 768px){
     /*Navbar*/
-    
+    .nav{
+        height: 7.4%;
+    }
+    .nav-text{
+        display: block;
+    }
     /*Intro*/
     .intro-text{
         width: 100%;
     }
     /*About*/
     .about h1{
-        font-size: 9vh;
+        font-size: 350%;
     }
     #sidebar-r.open, #sidebar-l.open {
         text-align: center;
