@@ -69,11 +69,9 @@ section{
 .nav{
     position: fixed;
     top: 0;
-    height: 55px;
     background: #505050;
     width: 100%;
     z-index: 50;
-
 }
 .navbar{
     list-style-type: none;
@@ -550,8 +548,8 @@ footer p{
 
 @media(max-width: 2000px){
     /*Navbar*/
-    .navbar{
-        height: 55px;
+    .nav{
+        height: 72px;
     }
 
     .navbar li:hover .nav-text{
@@ -583,19 +581,30 @@ footer p{
     /*Footer*/
 }
 
-@media(max-width: 1670px){
+@media(max-width: 1690px){
+    /*Navbar*/
+    .nav{
+        height: 65px;
+    }
 
 }
 
 @media(max-width: 1600px){
-
+    /*Navbar*/
+    .nav{
+        height: 58px;
+    }
 }
 
 @media(max-width: 1450px){
-
+    /*Navbar*/
 }
-
-
+@media(max-width: 1370px){
+    /*Navbar*/
+    .nav{
+        height: 55px;
+    }
+}
 @media(max-width: 1025px){
     /*About*/
     .about h1{
