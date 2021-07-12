@@ -238,45 +238,47 @@ section{
 }
 
 .ed{
-    font-size: 4vh;
+    font-size: 4.5vh;
     font-weight: 500;
     padding-top: 20px;
+    text-decoration: underline;
 }
 
 .ed1{
-    font-size: 3vh;
+    font-size: 3.5vh;
 }
 
 .ed2{
-    font-size: 3vh;
+    font-size: 3.5vh;
     margin-top: -20px;
 }
 
 .ed3{
-    font-size: 2vh;
+    font-size: 2.5vh;
     margin-top: -20px;
 }
 
 .ed4{
-    font-size: 2vh;
+    font-size: 2.5vh;
     margin-top: -20px;
 }
 
 .ex{
-    font-size: 4vh;
+    font-size: 4.5vh;
     font-weight: 500;
     padding-top: 20px;
+    text-decoration: underline;
 }
 
 .ex1{
-    font-size: 3vh;
+    font-size: 3.5vh;
 }
 .ex2{
-    font-size: 3vh;
+    font-size: 2.5vh;
     margin-top: -20px;
 }
 .ex3{
-    font-size: 2vh;
+    font-size: 2.5vh;
     margin-top: -20px;
 }
 
@@ -321,7 +323,7 @@ section{
     color: rgb(100, 216, 255);
     background-color: #505050;
     border-radius: 20px;
-    font-size: 2.2vh;
+    font-size: 2.8vh;
     width:18vh
 }
 
@@ -371,7 +373,7 @@ section{
     color: rgb(100, 216, 255);
     background-color: #505050;
     border-radius: 20px;
-    font-size: 2.2vh;
+    font-size: 2.8vh;
     width:18vh
 }
 
@@ -628,20 +630,32 @@ footer p{
     #text{
         width:65%;
     }
+    .about-me p{
+        text-align: center;
+    }
+
+    #sidebar-l, #sidebar-r{
+        padding-top: 50px;
+    }
 
     .about-sidebar h5{
-        font-size: 3vh;
-        font-weight: 500;
+        font-size: 3.5vh;
         text-decoration: underline;
     }
     
     .side-text{
-        font-size: 2.4vh;
+        font-size: 2.5vh;
+    }
+    .about-sidebar li .iconify{
+        font-size: 6vh;
+        
     }
    
     .abt-column {
         width: 100%;
       }
+
+    
     /*Projects*/
     .projects-text h1{
         font-size: 9vh;
@@ -673,8 +687,23 @@ footer p{
     /*Intro*/
     
     /*About*/
-
+    #sidebar-l, #sidebar-r{
+        padding-top: 50px;
+    }
+    .side-text{
+        font-size: 2vh;
+    }
+    .about-sidebar li .iconify{
+        font-size: 5vh;
+        
+    }
     /*Projects*/
+    .card-text{
+        font-size: 1.8vh;
+    }
+    .card-lang{
+        font-size: 2vh;
+    }
 
     /*Contact*/
 
@@ -695,13 +724,15 @@ footer p{
 
     }
     .nav-btn{
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 1rem;
+
     }
 
     .nav-tog{
         font-size: 4.3vh;
         display: block;
         position: fixed;
+        padding-left: 1rem;
     }
 
     .navbar li:hover .nav-text{
@@ -721,33 +752,67 @@ footer p{
     }
 
     .iconify{
-        font-size: 4.3vh;
+        font-size: 4.5vh;
         
     }
 
     /*Intro*/
 
     /*About*/
+    .about h1{
+        font-size: 8vh;
+    }
+    .about-img{
+        min-width: 40vh;
+        max-height: 40vh;
 
+    }
+    .about-me p{
+        text-align: center;
+    }
+    #sidebar-l, #sidebar-r{
+        padding-top: 45px;
+    }
+    
+    #sidebar-l.open, #sidebar-r.open{
+        width: 15%;
+    }
+
+    .about-sidebar h5{
+        font-size: 2.8vh;
+    }
+    .side-text{
+        font-size: 1.64vh;
+    }
+    
+    /*Projects*/
     .card-grid{
         grid-template-columns: 1fr;
         grid-gap: 10px;
     }
-    
-    /*Projects*/
+    .projects-text h1{
+        font-size: 8vh;
+    }
 
+    .card-text{
+        font-size: 2.3vh;
+    }
+    .card-lang{
+        font-size: 2.3vh;
+    }
     /*Contact*/
+    .contact-text h1{
+        font-size: 8vh;
+    }
 
-    /*Footer*/
-}
 
 @media(max-width: 420px){
     /*Navbar*/
     .nav{
-        height: 55px;
+        height: 45px;
     }
     .navbar{
-        margin-top: 50px;
+        margin-top: 45px;
     }
 
     .nav-text{
@@ -791,7 +856,7 @@ footer p{
 
     }
     .btn-hob{
-        font-size: 2.2vh;
+        font-size: 2vh;
         width:14vh
     }
     .about-me p{
@@ -816,7 +881,6 @@ footer p{
     }
     .about-sidebar li .iconify{
         font-size: 4vh;
-        
     }
     .ed{
         font-size: 3vh;
@@ -824,11 +888,11 @@ footer p{
     }
     
     .ed1, .ed2{
-        font-size: 2.3vh;
+        font-size: 2vh;
     }
     
     .ed3{
-        font-size: 2vh;
+        font-size: 1.6vh;
 
     }
     
@@ -841,12 +905,12 @@ footer p{
         font-size: 3vh;
     }
     
-    .ex1, .ex2{
-        font-size: 2.3vh;
+    .ex1{
+        font-size: 2vh;
     }
     
-    .ex3{
-        font-size: 2vh;
+    .ex2,.ex3{
+        font-size: 1.6vh;
     }
     
     /*Projects*/
@@ -854,7 +918,7 @@ footer p{
         font-size: 6vh;
     }
     .btn-proj{
-        font-size: 2.2vh;
+        font-size: 2vh;
         width:14vh;
     }
     .card-text{
