@@ -590,12 +590,12 @@ footer p{
     /*Intro*/
     .intro-text h1{
         font-size: 6.5vw;
-        margin-top: -14vh;
+        margin-top: -16vh;
     }
     
     .intro-text h2{
         font-size: 4.5vw;
-        margin-top: -20vh;
+        margin-top: -24vh;
     }
     
     .intro-text h3{
@@ -604,7 +604,7 @@ footer p{
     
     .intro-text h5{
         font-size: 3.5vw;
-        margin-top: -22vh;
+        margin-top: -26vh;
     }
     /*About*/
     #text h1{
@@ -676,12 +676,12 @@ footer p{
     
     .ed3{
         font-size: 2.5vw;
-        margin-top: -2.2vh;
+        margin-top: -2vh;
     }
     
     .ed4{
         font-size: 2.5vw;
-        margin-top: -2.2vh;
+        margin-top: -2vh;
     }
     
     .ex{
@@ -693,11 +693,11 @@ footer p{
     }
     .ex2{
         font-size: 2.5vw;
-        margin-top: -2.2vh;
+        margin-top: -2vh;
     }
     .ex3{
         font-size: 2.5vw;
-        margin-top: -2.2vh;
+        margin-top: -2vh;
     }
     /*Projects*/
     .projects-text h1{
