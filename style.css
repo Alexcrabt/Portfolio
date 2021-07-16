@@ -70,19 +70,20 @@ section{
     position: fixed;
     top: 0;
     background: #505050;
-    width: 100%;
+    width: 100vw;
+    height: 9vh;
     z-index: 50;
 }
 .navbar{
     list-style-type: none;
-    margin: .4%;
-    padding: .4%;
+    margin: .4vw;
+    padding: .4vw;
 
 }
 
 .nav-btn{
     border:none;
-    padding: 0 2rem;
+    padding: 0 2vw;
     color: rgb(100, 216, 255);
     background-color: transparent;
 
@@ -90,7 +91,7 @@ section{
 
 .nav-tog{
     border:none;
-    padding: 0 2rem;
+    padding: 0 2vw;
     color: rgb(100, 216, 255);
     background-color: transparent;
     display: none;
@@ -111,10 +112,10 @@ section{
 .nav-text{
     display:none;
     text-align: center;
-    margin-top: -12px;
+    margin-top: -1vh;
     padding-top: .2em;
-    font-size: 100%;
-    position: relative;
+    font-size: 1vw;
+    position:relative;
     
 }
 
@@ -129,7 +130,6 @@ section{
 /*Intro*/
 .intro{
     display: grid;
-    place-items: center;
     text-align: center;
     width:100%;
     min-height: 100vh;
@@ -139,31 +139,30 @@ section{
     display: grid;
     color:rgb(100, 216, 255);
     height: 100%;
-    padding-top: 6.2%;
-
+    padding-top: 15vh;
 }
 
 .intro-text h1{
-    font-size: 8vh;
+    font-size: 4.5vw;
     font-weight: 400;
-    margin-top: -60px;
+    margin-top: -8vh;
 }
 
 .intro-text h2{
-    font-size: 5vh;
+    font-size: 2.8vw;
     font-weight: 300;
-    margin-top: -60px;
+    margin-top: -10vh;
 }
 
 .intro-text h3{
-    font-size: 5vh;
+    font-size: 2.8vw;
     font-weight: 300;
 }
 
 .intro-text h5{
-    font-size: 3vh;
+    font-size: 2vw;
     font-weight: 300;
-    margin-top: -60px;
+    margin-top: -10vh;
 }
 
 /*About Me*/
@@ -172,12 +171,55 @@ section{
     color:rgb(100, 216, 255);
     min-height: 100vh;
     width: 100%;
-    padding-top: 60px;
+    padding-top: 10vh;
     text-align: center;
 }
-.about h1{
-    font-size: 10vh;
+#text h1{
+    font-size: 5vw;
     font-weight: 400;
+}
+
+.about-img{
+    width: 35%;
+    height: 40%;
+    border-radius: 5px;
+}
+
+.btn-hob{
+    border:solid rgb(38, 207, 38);
+    color: rgb(100, 216, 255);
+    background-color: #505050;
+    border-radius: 20px;
+    font-size: 1.2vw;
+    width:8vw
+}
+
+.btn-hob:focus{
+    outline: none;
+}
+
+.btn-hob:hover{
+    color: rgb(38, 207, 38);
+    box-shadow: 0 4px 16px 0 rgb(38, 207, 38);
+}
+
+#text {
+    width: 70%;
+    margin: 0 auto 0 auto;
+  }
+
+.about-me{
+    padding-top: 5vh;
+}
+
+.about-me p{
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.about-bttm{
+    border-top: .4vh solid rgb(100, 216, 255);
+    
 }
 
 #sidebar-r,#sidebar-l, #text{
@@ -191,8 +233,8 @@ section{
     float:right;
     overflow-x: hidden;
     width: 0;
-    line-height: 1.5em;
-    padding-top: 70px;
+    line-height: 1vh;
+    padding-top: 10.5vh;
     list-style-type: none;
 }
 
@@ -201,8 +243,8 @@ section{
     float:left;
     overflow-x: hidden;
     width: 0;
-    line-height: 1.5em;
-    padding-top: 70px;
+    line-height: 1vh;
+    padding-top: 10.5vh;
     list-style-type: none;
 }
 
@@ -216,98 +258,73 @@ section{
     width: 12%;
 }
 
-#text {
-    width: 70%;
-    margin: 0 auto 0 auto;
-  }
-
-.about-me{
-    padding-top: 20px;
-}
-
-.about-me p{
-    font-size: 3vh;
-    text-align: left;
-}
-
-.about-bttm{
-    border-top: 3px solid rgb(100, 216, 255);
-    
-}
-
-.ed{
-    font-size: 4.5vh;
-    font-weight: 500;
-    padding-top: 20px;
-    text-decoration: underline;
-}
-
-.ed1{
-    font-size: 3.5vh;
-}
-
-.ed2{
-    font-size: 3.5vh;
-    margin-top: -20px;
-}
-
-.ed3{
-    font-size: 2.5vh;
-    margin-top: -20px;
-}
-
-.ed4{
-    font-size: 2.5vh;
-    margin-top: -20px;
-}
-
-.ex{
-    font-size: 4.5vh;
-    font-weight: 500;
-    padding-top: 20px;
-    text-decoration: underline;
-}
-
-.ex1{
-    font-size: 3.5vh;
-}
-.ex2{
-    font-size: 2.5vh;
-    margin-top: -20px;
-}
-.ex3{
-    font-size: 2.5vh;
-    margin-top: -20px;
-}
-
 .about-sidebar h5{
-    font-size: 4vh;
+    font-size: 1.8vw;
     font-weight: 500;
     text-decoration: underline;
 }
 
 .about-sidebar li{
-    padding: .5em;
+    padding: 1.5vh;
 }
 
 .side-text{
     display: none;
     text-align: center;
-    margin-top: -12px;
+    margin-top: -1vh;
     padding-top: .5em;
-    font-size: 3vh;
+    font-size: 1.2vw;
     position: relative;
     
 }
 
 .about-sidebar li .iconify{
-    font-size: 6vh;
+    font-size: 250%;
 }
 
-.about-img{
-    min-width: 50vh;
-    max-height: 45vh;
-    border-radius: 5px;
+.ed{
+    font-size: 2.2vw;
+    font-weight: 500;
+    padding-top: 2vh;
+    text-decoration: underline;
+}
+
+.ed1{
+    font-size: 1.8vw;
+}
+
+.ed2{
+    font-size: 1.8vw;
+    margin-top: -3.6vh;
+}
+
+.ed3{
+    font-size: 1.2vw;
+    margin-top: -2.6vh;
+}
+
+.ed4{
+    font-size: 1.2vw;
+    margin-top: -2.6vh;
+}
+
+.ex{
+    font-size: 2.2vw;
+    font-weight: 500;
+    padding-top: 2vh;
+    text-decoration: underline;
+}
+
+.ex1{
+    font-size: 1.8vw;
+}
+.ex2{
+    font-size: 1.2vw;
+    margin-top: -2.6vh;
+}
+.ex3{
+    font-size: 1.2vw;
+    margin-top: -2.6vh;
 }
 
 .abt-column {
@@ -316,23 +333,7 @@ section{
     margin-bottom: 1em;
   }
 
-.btn-hob{
-    border:solid rgb(38, 207, 38);
-    color: rgb(100, 216, 255);
-    background-color: #505050;
-    border-radius: 20px;
-    font-size: 2.8vh;
-    width:18vh
-}
 
-.btn-hob:focus{
-    outline: none;
-}
-
-.btn-hob:hover{
-    color: rgb(38, 207, 38);
-    box-shadow: 0 4px 16px 0 rgb(38, 207, 38);
-}
 
 /*
 #sidebar-r.open + #text {
@@ -349,10 +350,11 @@ section{
 
 /*Projects*/
 .projects{
-    min-height: 100vh;
     background-color: black;
     color:rgb(100, 216, 255);
+    min-height: 100vh;
     width: 100%;
+    padding-top: 5vh;
 }
 
 .projects-text{
@@ -362,7 +364,7 @@ section{
 }
 
 .projects-text h1{
-    font-size: 10vh;
+    font-size: 5vw;
     font-weight: 400;
 }
 
@@ -371,8 +373,8 @@ section{
     color: rgb(100, 216, 255);
     background-color: #505050;
     border-radius: 20px;
-    font-size: 2.8vh;
-    width:18vh
+    font-size: 1.2vw;
+    width:8vw
 }
 
 .btn-proj{
@@ -394,7 +396,7 @@ section{
 .card{
     margin: 10px auto;
     box-shadow: 0 2px 5px 0 rgb(38, 207, 38);
-    height:73vmin;
+    height:75vmin;
     width: 100%;
     background:  #606060;
     border-radius: 5px
@@ -402,27 +404,31 @@ section{
 
 .card-head{
     text-align: center;
-    font-size:3vh;
+    font-size: 1.5vw;
 }
+
 .card-text{
     text-align: left;
-    font-size: 2vh;
+    font-size: 1vw;
     padding-top:2px;
 
 }
+
 .card-lang{
     position: absolute;
-    font-size: 2vh;
+    font-size: 1vw;
     bottom: -10px;
 }
+
 .card-img {
     min-width: 100%;
     max-height: 45vh;
   }
-.card-body a img{
 
+.card-body a img{
     border-radius: 5px;
 }
+
 .card-body a img:hover{
     box-shadow: 0 4px 16px 0 rgb(38, 207, 38);
 }
@@ -438,6 +444,7 @@ section{
     color:rgb(100, 216, 255);
     min-height: 93.3vh;
     width: 100%;
+    padding-top: 5vh;
 }
 .contact-text{
     padding-top: 60px;
@@ -445,22 +452,21 @@ section{
     position: relative;
 }
 .contact-text h1{
-    font-size: 10vh;
+    font-size: 5vw;
     font-weight: 400;
 }
 
 .contact-text p{
-    font-size: 4vh;
+    font-size: 2.5vw;
 }
 .iconify[data-icon=logos-github-icon]{
     background: #fff;
     color:#000;
-    font-size: 5vh;
+    font-size: 250%;
 
 }
 .iconify[data-icon=logos-github-icon]:hover{
-    box-shadow: 0 4px 16px 0 rgb(38, 207, 38);
-    
+    box-shadow: 0 4px 16px 4px rgb(38, 207, 38);  
 }
 .contact-form {
     max-width: 800px;
@@ -531,7 +537,7 @@ footer{
     position:relative;
     bottom: 0;
     width: 100%;
-    height: 3rem;
+    height: auto;
     overflow:hidden;
 }
 
@@ -539,18 +545,14 @@ footer p{
     margin: 10px auto;
     text-align: center;
     color: rgb(100, 216, 255);
-    font-size: 2.5vh;
+    font-size: 1.2vw;
 }
 
   
-
 /*Media screen*/
 
 @media(max-width: 2700px){
     /*Navbar*/
-    .nav{
-        height: 72px;
-    }
 
     .navbar li:hover .nav-text{
         color:rgb(38, 207, 38);
@@ -561,11 +563,9 @@ footer p{
     }
 
     /*Intro*/
-    .intro-text{
-        width: 800px
-    }
 
     /*About*/
+
     .about-sidebar li:hover .side-text{
         color:rgb(38, 207, 38);
         display:block;
@@ -581,227 +581,207 @@ footer p{
     /*Footer*/
 }
 
-@media(max-width: 1690px){
-    /*Navbar*/
-    .nav{
-        height: 65px;
-    }
-
-}
-
-@media screen and (max-width: 1600px){
-    /*Navbar*/
-    .nav{
-        height: 8.5%;
-    }
-}
-
-@media(max-width: 1450px){
-    /*Navbar*/
-}
-@media(max-width: 1370px){
-    /*Navbar*/
-    .nav{
-        height: 55px;
-    }
-}
-@media(max-width: 1025px){
-    /*About*/
-    .about h1{
-        font-size: 9vh;
-    }
-    .about-sidebar h5{
-        font-size: 3.5vh;
-        text-decoration: underline;
-    }
-    
-    .side-text{
-        font-size: 2.5vh;
-    }
-    .about-sidebar li .iconify{
-        font-size: 6vh;
-        
-    }
-    .ed{
-        font-size: 3.5vh;
-
-    }
-    
-    .ed1, .ed2{
-        font-size: 2.8vh;
-    }
-    
-    .ed3, .ed4{
-        font-size: 2.2vh;
-
-    }
-    
-    .ex{
-        font-size: 3.5vh;
-    }
-    
-    .ex1{
-        font-size: 2.8vh;
-    }
-    
-    .ex2,.ex3{
-        font-size: 2.2vh;
-    }
-
-}
-
-@media(max-width: 990px){
-    /*Intro*/
-
-    /*About*/
-    .about-me{
-        font-size: 1.5rem;
-    }
-    /*Projects*/
-
-    /*Contact*/
-
-    /*Footer*/
-}
-@media(max-width: 820px){
-    /*Intro*/
-
-    /*About*/
-    .about-me{
-        font-size: 1.5rem;
-    }
-    
-    /*Projects*/
-
-    /*Contact*/
-
-    /*Footer*/
-}
-
 @media(max-width: 768px){
     /*Navbar*/
-    .nav{
-        height: 7.4%;
-    }
     .nav-text{
+        font-size: 2vw;
         display: block;
     }
     /*Intro*/
-    .intro-text{
-        width: 100%;
+    .intro-text h1{
+        font-size: 6.5vw;
+        margin-top: -14vh;
+    }
+    
+    .intro-text h2{
+        font-size: 4.5vw;
+        margin-top: -20vh;
+    }
+    
+    .intro-text h3{
+        font-size: 4.5vw;
+    }
+    
+    .intro-text h5{
+        font-size: 3.5vw;
+        margin-top: -22vh;
     }
     /*About*/
-    .about h1{
-        font-size: 350%;
-    }
-    #sidebar-r.open, #sidebar-l.open {
-        text-align: center;
-        width: 15%;
+    #text h1{
+        font-size: 8vw;
     }
 
-    #text{
-        width:65%;
+    .about-img{
+        width: 60%;
+        height: 50%;
+        border-radius: 5px;
+    }
+
+    .btn-hob{
+        font-size: 2vw;
+        width:14vw
     }
     .about-me p{
-        text-align: center;
+        font-size: 2.5vw;
     }
 
-    #sidebar-l, #sidebar-r{
-        padding-top: 50px;
+    #sidebar-r {
+        line-height: 1vh;
+        padding-top: 8vh;
+    }
+    
+    #sidebar-l{
+        line-height: 1vh;
+        padding-top: 8vh;
     }
 
     .about-sidebar h5{
-        font-size: 3.5vh;
-        text-decoration: underline;
+        font-size: 2.8vw;
     }
     
     .side-text{
-        font-size: 2.5vh;
+        font-size: 1.6vw; 
+        margin-top: -.5vh;
+        display: block;
     }
+
+    .about-sidebar li:hover .side-text{
+        color:unset;
+        display:block;
+    }
+    .about-sidebar li:hover .iconify{
+        color:unset;
+    }
+
     .about-sidebar li .iconify{
-        font-size: 6vh;
-        
+        font-size: 200%;
     }
-   
+
     .abt-column {
         width: 100%;
       }
 
+    .ed{
+        font-size: 4vw;
+    }
     
+    .ed1{
+        font-size: 3.5vw;
+    }
+    
+    .ed2{
+        font-size: 3.5vw;
+        margin-top: -3vh;
+    }
+    
+    .ed3{
+        font-size: 2.5vw;
+        margin-top: -2.6vh;
+    }
+    
+    .ed4{
+        font-size: 2.5vw;
+        margin-top: -2.6vh;
+    }
+    
+    .ex{
+        font-size: 4vw;
+    }
+    
+    .ex1{
+        font-size: 3.5vw;
+    }
+    .ex2{
+        font-size: 2.5vw;
+        margin-top: -2.6vh;
+    }
+    .ex3{
+        font-size: 2.5vw;
+        margin-top: -2.6vh;
+    }
     /*Projects*/
     .projects-text h1{
-        font-size: 9vh;
+        font-size: 8vw;
+    }
+
+    .btn-proj{
+        font-size: 2vw;
+        width:14vw;
     }
     .card-grid{
         grid-template-columns: repeat(2,1fr);
         grid-gap: 25px;
     }
 
-    .card{
-        height:65vh;
+    .card-head{
+        font-size: 2.5vw;
     }
 
-    .card-img {
-        max-height: 30vh;
-      }
+    .card-text{
+        font-size: 2vw;
+    }
+
+    .card-lang{
+        font-size: 2vw;
+    }
     /*Contact*/
+    .contact{
+        margin-bottom: 2vh;
+    }
     .contact-text h1{
-        font-size: 9vh;
+        font-size: 8vw;
+    }
+
+    .contact-text p{
+        font-size: 4vw;
+    }
+
+    .iconify[data-icon=logos-github-icon]{
+        box-shadow: 0 4px 16px 4px rgb(38, 207, 38);
+    }
+
+    .iconify[data-icon=logos-github-icon]:hover{
+        box-shadow: unset;  
     }
 
     .contact-form{
         max-width: 700px;
     }
-    /*Footer*/
-}
-
-@media(max-width: 700px){
-    /*Intro*/
-    
-    /*About*/
-    #sidebar-l, #sidebar-r{
-        padding-top: 50px;
-    }
-    .side-text{
-        font-size: 2vh;
-    }
-    .about-sidebar li .iconify{
-        font-size: 5vh;
-        
-    }
-    /*Projects*/
-    .card-text{
-        font-size: 1.8vh;
-    }
-    .card-lang{
-        font-size: 2vh;
-    }
-
-    /*Contact*/
 
     /*Footer*/
+    footer p{
+        font-size: 2.4vw;
+    }
 }
 
-@media(max-width: 576px){
+@media(max-width:576px){
     /*Navbar*/
     .nav{
-        height: 40px;
+        height: 7vh;
     }
+
     .navbar{
         display: inline-block;
         margin-top: 40px;
         background: #505050;
         height: auto;
         width: 100%;
+    }
+
+    .nav-btn{
+        padding: 1vh 3vw;
 
     }
-    .nav-btn{
-        padding: 0.5rem 1rem;
 
+    .nav-text{
+        display: inline-flex;
+        padding: 0 2vw;
+        font-size: 3.2vw;
     }
 
     .nav-tog{
-        font-size: 4.3vh;
+        margin-top: 1.5vh;
+        font-size: 3.8vw;
         display: block;
         position: fixed;
         padding-left: 1rem;
@@ -817,202 +797,165 @@ footer p{
         
     }
 
-    .nav-text{
-        padding: 0 1rem;
-        font-size: 1em;
-        display: inline-flex;
-    }
-
     .iconify{
-        font-size: 4.5vh; 
+        font-size: 180%;
     }
 
     /*Intro*/
 
-    /*About*/
-    .about h1{
-        font-size: 8vh;
-    }
-    .about-img{
-        min-width: 40vh;
-        max-height: 40vh;
-    }
-    .about-me p{
-        text-align: center;
-    }
-    #sidebar-l, #sidebar-r{
-        padding-top: 45px;
+    .intro-text h1{
+        font-size: 9vw;
+        margin-top: -14vh;
     }
     
+    .intro-text h2{
+        font-size: 6.5vw;
+        margin-top: -20vh;
+    }
+    
+    .intro-text h3{
+        font-size: 6.5vw;
+    }
+    
+    .intro-text h5{
+        font-size: 4.5vw;
+        margin-top: -22vh;
+    }
+
+    /*About*/
+    #text h1{
+        font-size: 12vw;
+    }
+    
+    .about-img{
+        width: 80%;
+        height: 50%;
+    }
+
+    .btn-hob{
+        font-size: 3.5vw;
+        width:23vw
+    }
+    .about-me p{
+        font-size: 4vw;
+    }
+    
+    #sidebar-l, #sidebar-r{
+        line-height: 1vh;
+        padding-top: 10vh;
+    }
     #sidebar-l.open, #sidebar-r.open{
         width: 15%;
     }
 
     .about-sidebar h5{
-        font-size: 2.8vh;
-    }
-    .side-text{
-        font-size: 1.64vh;
+        font-size: 3.5vw;
     }
     
+    .side-text{
+        font-size: 2.1vw; 
+        margin-top: -.5vh;
+    }
+
+    .about-sidebar li .iconify{
+        font-size: 180%;
+    }
+
+    .ed{
+        font-size: 5.5vw;
+    }
+    
+    .ed1{
+        font-size: 4vw;
+    }
+    
+    .ed2{
+        font-size: 4vw;
+        margin-top: -3vh;
+    }
+    
+    .ed3{
+        font-size: 3vw;
+        margin-top: -2.6vh;
+    }
+    
+    .ed4{
+        font-size: 3vw;
+        margin-top: -2.6vh;
+    }
+    
+    .ex{
+        font-size: 5.5vw;
+    }
+    
+    .ex1{
+        font-size: 4vw;
+    }
+    .ex2{
+        font-size: 3vw;
+        margin-top: -2.6vh;
+    }
+    .ex3{
+        font-size: 3vw;
+        margin-top: -2.6vh;
+    }
+
     /*Projects*/
+    .projects-text h1{
+        font-size: 12vw;
+    }
+
+    .btn-proj{
+        font-size: 3.8vw;
+        width:25vw;
+    }
+
     .card-grid{
         grid-template-columns: 1fr;
         grid-gap: 10px;
     }
-    .projects-text h1{
-        font-size: 8vh;
+
+    .card{
+        height: 100vmin;
+    }
+
+    .card-head{
+        font-size: 4.2vw;
     }
 
     .card-text{
-        font-size: 2.3vh;
+        font-size: 2.8vw;
     }
     .card-lang{
-        font-size: 2.3vh;
-    }
-    /*Contact*/
-    .contact-text h1{
-        font-size: 8vh;
-    }
-}
-
-@media(max-width: 420px){
-    /*Navbar*/
-    .nav{
-        height: 45px;
-    }
-    .navbar{
-        margin-top: 45px;
-    }
-
-    .nav-text{
-        padding: 0 1rem;
-        font-size: 1em;
-        display:inline-flex;
-    }
-
-    .iconify{
-        font-size: 4vh
-    }
-    /*Intro*/
-    .intro{
-        width:95%;
-    }
-    .intro-text h1{
-        font-size: 6vh;
-        font-weight: 400;
-        margin-top: -60px;
-    }
-    
-    .intro-text h2{
-        font-size: 4vh;
-    }
-    
-    .intro-text h3{
-        font-size: 4vh;
-    }
-    
-    .intro-text h5{
-        font-size: 3vh;
-    }
-
-    /*About*/
-    .about h1{
-        font-size: 6vh;
-    }
-    .about-img{
-        min-width: 25vh;
-        max-height: 25vh;
-
-    }
-    .btn-hob{
-        font-size: 2vh;
-        width:14vh
-    }
-    .about-me p{
-        font-size: 2.5vh;
-        text-align: center;
-    }
-    #sidebar-l, #sidebar-r{
-        padding-top: 50px;
-    }
-
-    #sidebar-l.open, #sidebar-r.open{
-        width: 15%;
-    }
-
-    .about-sidebar h5{
-        font-size: 1.6vh;
-    }
-    .side-text{
-        display: block;
-        font-size: 1vh;
-        white-space:nowrap;
-    }
-    .about-sidebar li .iconify{
-        font-size: 4vh;
-    }
-    .ed{
-        font-size: 3vh;
-
-    }
-    
-    .ed1, .ed2{
-        font-size: 2vh;
-    }
-    
-    .ed3{
-        font-size: 1.6vh;
-
-    }
-    
-    .ed4{
-        font-size: 1.6vh;
-
-    }
-    
-    .ex{
-        font-size: 3vh;
-    }
-    
-    .ex1{
-        font-size: 2vh;
-    }
-    
-    .ex2,.ex3{
-        font-size: 1.6vh;
-    }
-    
-    /*Projects*/
-    .projects-text h1{
-        font-size: 6vh;
-    }
-    .btn-proj{
-        font-size: 2vh;
-        width:14vh;
-    }
-    .card-text{
-        font-size: 1.9vh;
-    }
-    .card-lang{
-        font-size: 1.9vh;
+        font-size: 2.8vw;
     }
 
     /*Contact*/
-    .contact-text h1{
-        font-size: 6vh;
-        font-weight: 400;
+    .contact{
+        padding-top: 1vh;
     }
+    .contact-text{
+        padding-bottom: 5vh;
+    }
+    .contact-text h1{
+        font-size: 12vw;
+    }
+
     .contact-text p{
-        font-size: 3vh;
+        font-size: 5.5vw;
     }
+
+    .contact-form{
+        max-width: 500px;
+    }
+
     .column {
         float: none;
         width: 95%;
     }
       
     .right { 
-        width: 95%; 
+        width: 94%; 
     }
 
     #submit-input{
@@ -1020,31 +963,168 @@ footer p{
         width: 95%;
     }
 
+    .iconify[data-icon=logos-github-icon]{
+        font-size: 200%;
+    }
+
     /*Footer*/
     footer p{
-        font-size: 2.3vh;
+        font-size: 3.2vw;
     }
 }
 
-@media(max-width: 320px){
+@media(max-width: 420px){
     /*Navbar*/
     .nav{
-        height: 35px;
+        height: 6vh;
     }
+
+    /*Intro*/
+
+    .intro-text {
+        padding-top: 8vh;
+    }
+
+    .intro-text h1{
+        font-size: 10vw;
+        margin-top: -16vh;
+    }
+    
+    .intro-text h2{
+        font-size: 8vw;
+        margin-top: -28vh;
+    }
+    
+    .intro-text h3{
+        font-size: 8vw;
+    }
+    
+    .intro-text h5{
+        font-size: 6vw;
+        margin-top: -36vh;
+    }
+
+    /*About*/
+    .about-me p{
+        font-size: 4.5vw;
+    }
+
+    #sidebar-l, #sidebar-r{
+        padding-top: 6vh;
+    }
+
+    .about-sidebar li{
+        padding: 1vh;
+    }
+    
+    .side-text{
+        font-size: 2.1vw; 
+    }
+
+    .about-sidebar li .iconify{
+        font-size: 150%;
+    }
+
+    .ed{
+        font-size: 6vw;
+    }
+    
+    .ed1{
+        font-size: 4.5vw;
+    }
+    
+    .ed2{
+        font-size: 4.5vw;
+        margin-top: -3vh;
+    }
+    
+    .ed3{
+        font-size: 3.5vw;
+        margin-top: -2.6vh;
+    }
+    
+    .ed4{
+        font-size: 3.5vw;
+        margin-top: -2.6vh;
+    }
+    
+    .ex{
+        font-size: 6vw;
+    }
+    
+    .ex1{
+        font-size: 4.5vw;
+    }
+    .ex2{
+        font-size: 3.5vw;
+        margin-top: -2.6vh;
+    }
+    .ex3{
+        font-size: 3.5vw;
+        margin-top: -2.6vh;
+    }
+
+    /*Projects*/
+    .card{
+        height: 125vmin;
+    }
+
+    .card-head{
+        font-size: 5vw;
+    }
+
+    .card-text{
+        font-size: 3.6vw;
+    }
+    .card-lang{
+        font-size: 3.6vw;
+    }
+    /*Contact*/
+
+    .contact{
+        margin-bottom: 1.4vh;
+    }
+
+    /*Footer*/
+    footer{
+        height: 5.5vh;
+    }
+    footer p{
+        font-size: 4vw;
+    }
+}
+
+@media(max-width: 380px){
+    /*Intro*/
+
+    .intro-text h2{
+        margin-top: -26vh;
+    }
+    
+    .intro-text h3{
+        font-size: 8vw;
+    }
+    
+    .intro-text h5{
+        margin-top: -32vh;
+    }
+
+    /*About*/
+    #sidebar-l, #sidebar-r{
+        padding-top: 7vh;
+    }
+
+}
+
+@media(max-width:330px){
+    /*Navbar*/
     .navbar{
-        margin-top: 35px;
+        margin-top: 6vh;
+    
     }
 
     .iconify{
-        font-size: 4vh
+        font-size: 150%;
     }
-    /*Intro*/
-
-    /*About*/
-
-    /*Projects*/
-
-    /*Contact*/
-
-    /*Footer*/
+    
 }
