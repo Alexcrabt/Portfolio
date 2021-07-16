@@ -581,7 +581,7 @@ footer p{
     /*Footer*/
 }
 
-@media(max-width: 768px){
+@media(max-width: 770px){
     /*Navbar*/
     .nav-text{
         font-size: 2vw;
@@ -671,17 +671,17 @@ footer p{
     
     .ed2{
         font-size: 3.5vw;
-        margin-top: -3vh;
+        margin-top: -2.8vh;
     }
     
     .ed3{
         font-size: 2.5vw;
-        margin-top: -2.6vh;
+        margin-top: -2.2vh;
     }
     
     .ed4{
         font-size: 2.5vw;
-        margin-top: -2.6vh;
+        margin-top: -2.2vh;
     }
     
     .ex{
@@ -693,11 +693,11 @@ footer p{
     }
     .ex2{
         font-size: 2.5vw;
-        margin-top: -2.6vh;
+        margin-top: -2.2vh;
     }
     .ex3{
         font-size: 2.5vw;
-        margin-top: -2.6vh;
+        margin-top: -2.2vh;
     }
     /*Projects*/
     .projects-text h1{
