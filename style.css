@@ -601,68 +601,7 @@ footer p{
     /*Footer*/
 }
 
-@media(max-width:1930px){
-    /*Navbar*/
-    .nav{
-        height: 6.5vh;
-    }
-    /*Intor*/
-    .intro-text h1{
-        margin-top: -15vh;
-    }
-    
-    .intro-text h2{
-        margin-top: -22vh;
-    }
-    
-    .intro-text h5{
-        margin-top: -24vh;
-    }
 
-    /*About*/
-    .side-text{
-        padding-top: .8em;
-    }
-
-    /*Projects*/
-    .card{
-        height: 68vmin;
-    }
-
-    /*Contact*/
-    .contact{
-        margin-bottom: 2vh;
-    }
-}
-
-@media(max-width: 1610px){
-    /*Navbar*/
-    .nav{
-        height: 7vh;
-    }
-    /*Intor*/
-    .intro-text h1{
-        margin-top: -15vh;
-    }
-    
-    .intro-text h2{
-        margin-top: -22vh;
-    }
-    
-    .intro-text h5{
-        margin-top: -24vh;
-    }
-
-    /*Projects*/
-    .card{
-        height: 70vmin;
-    }
-
-    /*Contact*/
-    .contact{
-        margin-bottom: 2vh;
-    }
-}
 
 @media(max-width: 1440px){
     /*Navbar*/
