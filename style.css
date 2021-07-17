@@ -16,7 +16,22 @@ html, body{
     scroll-behavior:smooth;
     height: 100%;
     margin: 0 auto;
+
 }
+/*
+@keyframes blinkingStars{
+    0% { background-image: url(./stars_black_5.jpg)}
+    10%{ background-image: url(./stars_black_4.jpg)}
+    20%{ background-image: url(./stars_black_3.jpg)}
+    30%{ background-image: url(./stars_black_2.jpg)}
+    40%{ background-image: url(./stars_black_1.jpg)}
+    50%{ background-image: url(./stars_black_0.jpg)}
+    60%{ background-image: url(./stars_black_1.jpg)}
+    70%{ background-image: url(./stars_black_2.jpg)}
+    80%{ background-image: url(./stars_black_3.jpg)}
+    90%{ background-image: url(./stars_black_4.jpg)}
+    100%{ background-image: url(./stars_black_5.jpg)}}
+*/
 
 input:focus {
     outline: none;
@@ -466,6 +481,7 @@ section{
 .iconify[data-icon=logos-github-icon]{
     background: #fff;
     color:#000;
+    box-shadow: 0 4px 16px 4px rgb(38, 207, 38);
     font-size: 250%;
 
 }
@@ -583,6 +599,249 @@ footer p{
     /*Contact*/
 
     /*Footer*/
+}
+
+@media(max-width:1930px){
+    /*Navbar*/
+    .nav{
+        height: 6.5vh;
+    }
+    /*Intor*/
+    .intro-text h1{
+        margin-top: -15vh;
+    }
+    
+    .intro-text h2{
+        margin-top: -22vh;
+    }
+    
+    .intro-text h5{
+        margin-top: -24vh;
+    }
+
+    /*About*/
+    .side-text{
+        padding-top: .8em;
+    }
+
+    /*Projects*/
+    .card{
+        height: 68vmin;
+    }
+
+    /*Contact*/
+    .contact{
+        margin-bottom: 2vh;
+    }
+}
+
+@media(max-width: 1610px){
+    /*Navbar*/
+    .nav{
+        height: 7vh;
+    }
+    /*Intor*/
+    .intro-text h1{
+        margin-top: -15vh;
+    }
+    
+    .intro-text h2{
+        margin-top: -22vh;
+    }
+    
+    .intro-text h5{
+        margin-top: -24vh;
+    }
+
+    /*Projects*/
+    .card{
+        height: 70vmin;
+    }
+
+    /*Contact*/
+    .contact{
+        margin-bottom: 2vh;
+    }
+}
+
+@media(max-width: 1440px){
+    /*Navbar*/
+    .nav{
+        height: 7.5vh;
+    }
+    .nav-text{
+        font-size: 1.4vw;
+    }
+    .iconify{
+        font-size: 200%;
+    }
+    /*Intor*/
+    .intro-text h1{
+        margin-top: -15vh;
+    }
+    
+    .intro-text h2{
+        margin-top: -22vh;
+    }
+    
+    .intro-text h5{
+        margin-top: -24vh;
+    }
+
+    /*About*/
+    #text h1{
+        font-size: 5.5vw;
+    }
+
+    .btn-hob{
+        font-size: 1.6vw;
+        width:10vw
+    }
+
+    .about-me p{
+        font-size: 1.8vw;
+    }
+
+    #sidebar-r, #sidebar-l {
+        padding-top: 8vh;
+    }
+    
+
+    .about-sidebar h5{
+        font-size: 2.4vw;
+    }
+    
+    .side-text{
+        font-size: 1.6vw; 
+        margin-top: -.5vh;
+    }
+
+    .about-sidebar li .iconify{
+        font-size: 225%;
+    }
+
+    .ed{
+        font-size: 2.4vw;
+    }
+    
+    .ed1{
+        font-size: 2vw;
+    }
+    
+    .ed2{
+        font-size: 2vw;
+    }
+    
+    .ed3{
+        font-size: 1.6vw;
+    }
+    
+    .ed4{
+        font-size: 1.6vw;
+    }
+    
+    .ex{
+        font-size: 2.4vw;
+    }
+    
+    .ex1{
+        font-size: 2vw;
+    }
+    .ex2{
+        font-size: 1.6vw;
+    }
+    .ex3{
+        font-size: 1.6vw;
+    }
+
+    /*Projects*/
+    .projects-text h1{
+        font-size: 5.5vw;
+    }
+
+    .btn-proj{
+        font-size: 1.6vw;
+        width:10vw
+    }
+
+    .card-head{
+        font-size: 1.8vw;
+    }
+
+    .card-text{
+        font-size: 1.25vw;
+    }
+
+    .card-lang{
+        font-size: 1.25vw;
+    }
+
+    /*Contact*/
+    .contact{
+        padding-top: 5vh;
+        margin-bottom: 1vh;
+    }
+    .contact-text h1{
+        font-size: 5.5vw;
+    }
+
+    .iconify[data-icon=logos-github-icon]{
+        font-size: 225%;
+    }
+
+    .contact-form{
+        max-width: 900px;
+    }
+
+    /*Footer*/
+    footer p{
+        font-size: 1.6vw;
+    }
+}
+
+@media(max-width: 1370px){
+    /*Navbar*/
+    .nav{
+        height: 8.8vh;
+    }
+
+    /*Projects*/
+    .card-head{
+        font-size: 1.6vw;
+    }
+
+    .card-text{
+        font-size: 1.15vw;
+    }
+
+    .card-lang{
+        font-size: 1.15vw;
+    }
+}
+
+@media(max-width:1030px){
+    /*Navbar*/
+    .nav-text{
+        display: block;
+    }
+    .iconify{
+        font-size: 160%;
+    }
+
+    /*About*/
+    .side-text{
+        display: block;
+    }
+
+    /*Projects*/
+    .card{
+        height:72vmin;
+    }
+
+    /*Contac*/
+    .contact-form{
+        max-width: 750px;
+    }
 }
 
 @media(max-width: 770px){
@@ -738,10 +997,6 @@ footer p{
 
     .contact-text p{
         font-size: 4vw;
-    }
-
-    .iconify[data-icon=logos-github-icon]{
-        box-shadow: 0 4px 16px 4px rgb(38, 207, 38);
     }
 
     .iconify[data-icon=logos-github-icon]:hover{
