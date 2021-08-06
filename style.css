@@ -18,20 +18,6 @@ html, body{
     margin: 0 auto;
 
 }
-/*
-@keyframes blinkingStars{
-    0% { background-image: url(./stars_black_5.jpg)}
-    10%{ background-image: url(./stars_black_4.jpg)}
-    20%{ background-image: url(./stars_black_3.jpg)}
-    30%{ background-image: url(./stars_black_2.jpg)}
-    40%{ background-image: url(./stars_black_1.jpg)}
-    50%{ background-image: url(./stars_black_0.jpg)}
-    60%{ background-image: url(./stars_black_1.jpg)}
-    70%{ background-image: url(./stars_black_2.jpg)}
-    80%{ background-image: url(./stars_black_3.jpg)}
-    90%{ background-image: url(./stars_black_4.jpg)}
-    100%{ background-image: url(./stars_black_5.jpg)}}
-*/
 
 input:focus {
     outline: none;
@@ -40,19 +26,6 @@ input:focus {
 textarea:focus{
     outline: none;
 }
-
-
-/*Section Formating*/
-/*
-section{
-    margin-top:50px;
-    background: black;
-    height: 100%;
-    width: 100%;
-    padding: 25px;
-    box-sizing: border-box;
-    z-index: 1;
-}*/
 
 /*Stuff That Takes Effect Depending On Browser*/
 ::placeholder{
@@ -140,7 +113,7 @@ section{
 }
 
 .iconify{
-    font-size: 200%;
+    font-size: 4.5vh;
 }
 
 /*Intro*/
@@ -296,7 +269,7 @@ section{
 }
 
 .about-sidebar li .iconify{
-    font-size: 250%;
+    font-size: 5.5vh;
 }
 
 .ed{
@@ -482,14 +455,15 @@ section{
     background: #fff;
     color:#000;
     box-shadow: 0 4px 16px 4px rgb(38, 207, 38);
-    font-size: 250%;
+    font-size: 5.5vh;
 
 }
 .iconify[data-icon=logos-github-icon]:hover{
     box-shadow: 0 4px 16px 4px rgb(38, 207, 38);  
 }
 .contact-form {
-    max-width: 800px;
+    max-width: 50vw;
+    max-height:50vh;
     width: 100%;
     text-align: center;
     margin: 20px auto;
@@ -557,7 +531,7 @@ footer{
     position:relative;
     bottom: 0;
     width: 100%;
-    height: auto;
+    height: 6.7vh;
     overflow:hidden;
 }
 
@@ -577,6 +551,9 @@ footer p{
     .navbar li:hover .nav-text{
         color:rgb(38, 207, 38);
         display:block;
+    }
+    .nav-tog:hover{
+        color:rgb(38, 207, 38);
     }
     .navbar li:hover .iconify{
         color:rgb(38, 207, 38);
@@ -612,7 +589,7 @@ footer p{
         font-size: 1.4vw;
     }
     .iconify{
-        font-size: 200%;
+        font-size: 3.6vh;
     }
     /*Intor*/
     .intro-text h1{
@@ -656,7 +633,7 @@ footer p{
     }
 
     .about-sidebar li .iconify{
-        font-size: 225%;
+        font-size: 4.5vh;
     }
 
     .ed{
@@ -725,11 +702,12 @@ footer p{
     }
 
     .iconify[data-icon=logos-github-icon]{
-        font-size: 225%;
+        font-size: 4vh;
     }
 
     .contact-form{
-        max-width: 900px;
+        max-width: 65vw;
+        max-height:60vh;
     }
 
     /*Footer*/
@@ -764,7 +742,7 @@ footer p{
         display: block;
     }
     .iconify{
-        font-size: 160%;
+        font-size: 4.5vh;
     }
 
     /*About*/
@@ -778,8 +756,12 @@ footer p{
     }
 
     /*Contac*/
+    .iconify[data-icon=logos-github-icon]{
+        font-size: 5.5vh;
+    }
     .contact-form{
-        max-width: 750px;
+        max-width: 73vw;
+        max-height:60vh;
     }
 }
 
@@ -847,16 +829,8 @@ footer p{
         display: block;
     }
 
-    .about-sidebar li:hover .side-text{
-        color:unset;
-        display:block;
-    }
-    .about-sidebar li:hover .iconify{
-        color:unset;
-    }
-
     .about-sidebar li .iconify{
-        font-size: 200%;
+        font-size: 4.2vh;
     }
 
     .abt-column {
@@ -943,7 +917,7 @@ footer p{
     }
 
     .contact-form{
-        max-width: 700px;
+        max-width: 92vw;
     }
 
     /*Footer*/
@@ -986,17 +960,12 @@ footer p{
     }
 
     .navbar li:hover .nav-text{
-        color: unset;
         display: unset;
+    }
 
-    }
-    .navbar li:hover .iconify{
-        color: unset;
-        
-    }
 
     .iconify{
-        font-size: 180%;
+        font-size: 4vh;
     }
 
     /*Intro*/
@@ -1053,10 +1022,6 @@ footer p{
     .side-text{
         font-size: 2.1vw; 
         margin-top: -.5vh;
-    }
-
-    .about-sidebar li .iconify{
-        font-size: 180%;
     }
 
     .ed{
@@ -1144,7 +1109,8 @@ footer p{
     }
 
     .contact-form{
-        max-width: 500px;
+        max-width: 95vw;
+        max-height: 80vh;
     }
 
     .column {
@@ -1162,7 +1128,7 @@ footer p{
     }
 
     .iconify[data-icon=logos-github-icon]{
-        font-size: 200%;
+        font-size: 4.5vh;
     }
 
     /*Footer*/
@@ -1220,7 +1186,7 @@ footer p{
     }
 
     .about-sidebar li .iconify{
-        font-size: 150%;
+        font-size: 2.8vh;
     }
 
     .ed{
@@ -1319,10 +1285,6 @@ footer p{
     .navbar{
         margin-top: 6vh;
     
-    }
-
-    .iconify{
-        font-size: 150%;
     }
     
 }
