@@ -262,7 +262,7 @@ textarea:focus{
     display: block;
     text-align: center;
     margin-top: -1vh;
-    padding-top: .5em;
+    padding-top: .8em;
     font-size: 1.2vw;
     position: relative;
     
@@ -562,13 +562,6 @@ footer p{
     /*Intro*/
 
     /*About*/
-
-    .about-sidebar li:hover .side-text{
-        color:rgb(38, 207, 38);
-    }
-    .about-sidebar li:hover .iconify{
-        color:rgb(38, 207, 38);
-    }
     
     /*Projects*/
 
