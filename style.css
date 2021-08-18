@@ -99,7 +99,7 @@ textarea:focus{
 }
 
 .nav-text{
-    display:none;
+    display:block;
     text-align: center;
     margin-top: -1vh;
     padding-top: .2em;
@@ -259,7 +259,7 @@ textarea:focus{
 }
 
 .side-text{
-    display: none;
+    display: block;
     text-align: center;
     margin-top: -1vh;
     padding-top: .5em;
@@ -545,15 +545,15 @@ footer p{
   
 /*Media screen*/
 
-@media(max-width: 2700px){
+@media only screen and (max-width: 2700px){
     /*Navbar*/
 
     .navbar li:hover .nav-text{
         color:rgb(38, 207, 38);
-        display:block;
     }
     .nav-tog:hover{
         color:rgb(38, 207, 38);
+        
     }
     .navbar li:hover .iconify{
         color:rgb(38, 207, 38);
@@ -565,7 +565,6 @@ footer p{
 
     .about-sidebar li:hover .side-text{
         color:rgb(38, 207, 38);
-        display:block;
     }
     .about-sidebar li:hover .iconify{
         color:rgb(38, 207, 38);
@@ -580,7 +579,7 @@ footer p{
 
 
 
-@media(max-width: 1440px){
+@media only screen and (max-width: 1440px){
     /*Navbar*/
     .nav{
         height: 7.5vh;
@@ -716,7 +715,7 @@ footer p{
     }
 }
 
-@media(max-width: 1370px){
+@media only screen and (max-width: 1370px){
     /*Navbar*/
     .nav{
         height: 8.8vh;
@@ -736,19 +735,14 @@ footer p{
     }
 }
 
-@media(max-width:1030px){
+@media only screen and (max-width:1030px){
     /*Navbar*/
-    .nav-text{
-        display: block;
-    }
+
     .iconify{
         font-size: 4.5vh;
     }
 
     /*About*/
-    .side-text{
-        display: block;
-    }
 
     /*Projects*/
     .card{
@@ -765,11 +759,10 @@ footer p{
     }
 }
 
-@media(max-width: 770px){
+@media only screen and (max-width: 770px){
     /*Navbar*/
     .nav-text{
         font-size: 2vw;
-        display: block;
     }
     /*Intro*/
     .intro-text h1{
@@ -826,7 +819,6 @@ footer p{
     .side-text{
         font-size: 1.6vw; 
         margin-top: -.5vh;
-        display: block;
     }
 
     .about-sidebar li .iconify{
@@ -926,7 +918,7 @@ footer p{
     }
 }
 
-@media(max-width:576px){
+@media only screen and (max-width:576px){
     /*Navbar*/
     .nav{
         height: 7vh;
@@ -1137,7 +1129,7 @@ footer p{
     }
 }
 
-@media(max-width: 420px){
+@media only screen and (max-width: 420px){
     /*Navbar*/
     .nav{
         height: 6vh;
@@ -1258,7 +1250,7 @@ footer p{
     }
 }
 
-@media(max-width: 380px){
+@media only screen and (max-width: 380px){
     /*Intro*/
 
     .intro-text h2{
@@ -1280,7 +1272,7 @@ footer p{
 
 }
 
-@media(max-width:330px){
+@media only screen and (max-width:330px){
     /*Navbar*/
     .navbar{
         margin-top: 6vh;
