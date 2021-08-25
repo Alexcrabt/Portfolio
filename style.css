@@ -428,6 +428,26 @@ textarea:focus{
     box-shadow: 0 8px 16px 0 rgb(38, 207, 38);
 }*/
 
+/*Graphs*/
+.graphs{
+    background-color: black;
+    background-image: url(./stars_black.jpg);
+    color:rgb(100, 216, 255);
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.graphs-text h1{
+    font-size: 5vw;
+    font-weight: 400;
+}
+
+.graphs-text p{
+    font-size: 1.5vw;
+    text-align: center;
+}
 
 /*Contact Me*/
 .contact{
