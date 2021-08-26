@@ -71,3 +71,5 @@ function filterSelectionNavbar(elem) {
     }
   }
 }
+
+//Splider functions for graph section

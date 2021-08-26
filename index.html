@@ -14,6 +14,10 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+        
+				
+
         <!--Icons-->
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     </head>
@@ -25,7 +29,7 @@
         <nav class="nav">
             <button class="nav-tog " type="button" data-toggle="collapse" data-target=".navbar"><span class="iconify" data-icon="uil:bars" data-inline="false"></span></button>
             <ul class="navbar collapse d-sm-inline-flex d-md-inline-flex">
-                <li><a href="#intro"><button class="nav-btn" onclick="filterSelectionNavbar('intro')"><span class="iconify" data-icon="fa-home" data-inline="True"></span><div class="nav-text">Home</div></button></a></li>
+                <li><a href="#intro" ><button class="nav-btn" onclick="filterSelectionNavbar('intro')" ><span class="iconify" data-icon="fa-home" data-inline="True" ></span><div class="nav-text">Home</div></button></a></li>
                 <li><a href="#about"><button class="nav-btn" onclick="filterSelectionNavbar('about')" ><span class="iconify" data-icon="bi:person-lines-fill" data-inline="True"></span><div class="nav-text">About Me</div></button></a></li>
                 <li><a href="#projects"><button class="nav-btn" onclick="filterSelectionNavbar('projects')" ><span class="iconify" data-icon="clarity:briefcase-solid" data-inline="True"></span><div class="nav-text">Projects</div></button></a></li>
                 <li><a href="#graphs"><button class="nav-btn" onclick="filterSelectionNavbar('graphs')" ><span class="iconify" data-icon="octicon:graph-16"></span><div class="nav-text">Graphs</div></button></a></li>
@@ -306,9 +310,27 @@
                     Graphs
                 </h1>
                 <p>A more fleshed out graph section is coming!</p>
-                <iframe width="1400" height="600" frameborder="0" scrolling="no" src="//plotly.com/~Alexcrabt/2.embed?showlink=false"></iframe>
-            </div>
+                <div id="SNelight" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="no" src="//plotly.com/~Alexcrabt/2.embed?autosize=true&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/2.embed?autosize=true&showlink=false"></iframe></li>
+                            <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="no" src="//plotly.com/~Alexcrabt/15.embed?autosize=true&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/15.embed?autosize=true&showlink=false"></iframe></li>
+                        </ul>
+                    </div>
+                </div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        slider_one();
+                        //slider_two();
+                        });
 
+                        function slider_one() {
+                        var one = new Splide("#SNelight", {
+                            type: "loop",
+                        }).mount();
+                        }
+
+                </script>
         </section>
         <!--Contact-->
         <section id= "contact" class="sect contact">
@@ -347,6 +369,10 @@
                 </p>
         </footer>
         <script src="webjs.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
     </body>
 
 </html>
