@@ -181,15 +181,36 @@
                         <div class="card text-left">
                             <div class="card-body">
                                 <h5 class="card-head">
-                                    Swift Supernovae Data Grapher
+                                    Swift Supernovae UVOT Color Light Curve Grapher
+                                </h5>
+                                <a href= "https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/ColorTimePlotly_v2.py" target="_blank">
+                                    <img src="./Color_LightCurves.png" class= "card-img">
+                                </a>
+                                <p class="card-text">
+                                    Used Pandas and Plotly in Python script to read data on file
+                                    for all supernovae names in Swift Supernovae Database. The graph created is a color light 
+                                    curve graph with filter light curves to compare to associated color.
+                                </p>
+                                <p class="card-lang">
+                                    Python
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="port python">
+                        <div class="card text-left">
+                            <div class="card-body">
+                                <h5 class="card-head">
+                                    Swift Supernovae UVOT Filter Light Curve Grapher
                                 </h5>
                                 <a href= "https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/vbcurves_plotely_v2.py" target="_blank">
                                     <img src="./vbcurves_plotely_v2.png" class= "card-img">
                                 </a>
                                 <p class="card-text">
                                     Employed the Pandas and Plotly Python libraries to design code to read data on file
-                                    for all supernovae names in Swift Supernovae Database. Then Proceeds to graph all available
-                                    data on the UVW2, UVM2, UVW1, U, B, and V filters.
+                                    for all supernovae names in Swift Supernovae Database. Then proceeds to graph all available
+                                    data on the UVOT filters.
                                 </p>
                                 <p class="card-lang">
                                     Python
@@ -310,22 +331,45 @@
                     Graphs
                 </h1>
                 <p>A more fleshed out graph section is coming!</p>
+                <p>All graphs are created from supernovae from the <a href="https://pbrown801.github.io/SOUSA/">Swift's Optical/Ultraviolet Supernova Archive (SOUSA)</a>. 
+                    Below are a few of the graphs I created for a few types of supernovae using primarily the Plotly Python Library. These graphs are best viewed on a computer, to select a specific supernovae
+                    or supernovae group in the graphs below double click on the name in the legend.</p>
+                <br>
                 <div id="SNelight" class="splide">
+                    <h2>Swift Supernovae UVOT Filter Light Curve Graphs</h2>
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/2.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/2.embed?autosize=false&showlink=false"></iframe></li>
+                            <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/25.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/25.embed?autosize=false&showlink=false"></iframe></li>
                             <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/15.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/15.embed?autosize=false&showlink=false"></iframe></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="SNecolor" class="splide">
+                    <h2>Swift Supernovae UVOT Color Light Curve Graphs</h2>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/27.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/27.embed?autosize=false&showlink=false"></iframe></li>
+                            <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="no" src="//plotly.com/~Alexcrabt/29.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/29.embed?autosize=false&showlink=false"></iframe></li>
+                            <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/31.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/31.embed?autosize=false&showlink=false"></iframe></li>
                         </ul>
                     </div>
                 </div>
                 <script>
                     document.addEventListener("DOMContentLoaded", function () {
                         slider_one();
-                        //slider_two();
+                        slider_two();
                         });
 
                         function slider_one() {
                         var one = new Splide("#SNelight", {
+                            type: "loop",
+                        }).mount();
+                        }
+
+                        function slider_two() {
+                        var one = new Splide("#SNecolor", {
                             type: "loop",
                         }).mount();
                         }
