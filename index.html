@@ -109,6 +109,9 @@
                         <p class="ex2">Texas A&M AGGIENOVA, College Station, TX</p>
                         <p class="ex3">Aug 2020-Current</p>
                         <br>
+                        <p class="ex1">Math/Physics Tutor</p>
+                        <p class="ex2">Education One, Frisco, TX</p>
+                        <p class="ex3">Sep 2021-Current</p>
                     </div>
                 </div>
             </div>
@@ -330,51 +333,109 @@
                 <h1>
                     Graphs
                 </h1>
-                <p>A more fleshed out graph section is coming!</p>
-                <p>All graphs are created from supernovae from the <a href="https://pbrown801.github.io/SOUSA/">Swift's Optical/Ultraviolet Supernova Archive (SOUSA)</a>. 
-                    Below are a few of the graphs I created for a few types of supernovae using primarily the Plotly Python Library. These graphs are best viewed on a computer, to select a specific supernovae
+                <p>All graphs are created using supernovae from the <a id="sousa" href="https://pbrown801.github.io/SOUSA/">Swift's Optical/Ultraviolet Supernova Archive (SOUSA)</a>. 
+                    Below are a few light curve graphs I created for type Ib, Ic, and IIP supernovae using primarily the Plotly Python Library. There is also a link to the site that I am hosting a dash app that dispays a Color-Color 
+                    Diagram of all supernovae types in SOUSA. These graphs are best viewed on a computer, to select a specific supernovae
                     or supernovae group in the graphs below double click on the name in the legend.</p>
                 <br>
                 <div id="SNelight" class="splide">
                     <h2>Swift Supernovae UVOT Filter Light Curve Graphs</h2>
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/2.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/2.embed?autosize=false&showlink=false"></iframe></li>
-                            <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/25.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/25.embed?autosize=false&showlink=false"></iframe></li>
-                            <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/15.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/15.embed?autosize=false&showlink=false"></iframe></li>
+                            <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/2.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/2.embed?autosize=false&showlink=false"></iframe>
+                                <p>
+                                This graph dispays a light curve for the UVOT filters of Type Ib Supernovae (SNe) from SOUSA.
+                                    The graph starts with all filters light curves dispayed together.
+                                    You can choose to look at all SNe of a certain filter by selecting the filter from the Filter 
+                                    drop-down menu. To look at the error measurements of the filters absolute magnitudes you can toggle the
+                                    Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
+                                    click once on a SNe you want to toggle after the initial double-click.
+                                </p></li>
+                            <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/25.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/25.embed?autosize=false&showlink=false"></iframe>
+                                <p>
+                                This graph dispays a light curve for the UVOT filters of Type Ic Supernovae (SNe) from SOUSA.
+                                    The graph starts with all filters light curves dispayed together.
+                                    You can choose to look at all SNe of a certain filter by selecting the filter from the Filter 
+                                    drop-down menu. To look at the error measurements of the filters absolute magnitudes you can toggle the
+                                    Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
+                                    click once on a SNe you want to toggle after the initial double-click.
+                            </p></li>
+                            <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/15.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/15.embed?autosize=false&showlink=false"></iframe>
+                                <p>
+                                This graph displays a light curve for the UVOT filters of Type IIP Supernovae (SNe) from SOUSA.
+                                    The graph starts with all filters light curves dispayed together.
+                                    You can choose to look at all SNe of a certain filter by selecting the filter from the Filter 
+                                    drop-down menu. To look at the error measurements of the filters absolute magnitudes you can toggle the
+                                    Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
+                                    click once on a SNe you want to toggle after the initial double-click.
+                            </p></li>
                         </ul>
                     </div>
+                    <br>
                 </div>
 
                 <div id="SNecolor" class="splide">
                     <h2>Swift Supernovae UVOT Color Light Curve Graphs</h2>
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/27.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/27.embed?autosize=false&showlink=false"></iframe></li>
-                            <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="no" src="//plotly.com/~Alexcrabt/29.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/29.embed?autosize=false&showlink=false"></iframe></li>
-                            <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/31.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/31.embed?autosize=false&showlink=false"></iframe></li>
+                            <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/27.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/27.embed?autosize=false&showlink=false"></iframe>
+                                <p>
+                                This graph displays a color light curve for Type Ib Supernovae (SNe) from SOUSA, 
+                                all 15 colors are some combination of the UVOT filters. 
+                                The graph starts with all color light curves dispayed together.
+                                You can choose to look at all SNe of a certain color by selecting the color from the Color
+                                drop-down menu. To look at the error measurements of the colors absolute magnitude you can toggle the
+                                Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
+                                click once on a SNe you want to toggle after the initial double-click.
+                            </p></li>
+                            <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="no" src="//plotly.com/~Alexcrabt/29.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/29.embed?autosize=false&showlink=false"></iframe>
+                                <p>
+                                This graph displays a color light curve for Type Ic Supernovae (SNe) from SOUSA, 
+                                all 15 colors are some combination of the UVOT filters. 
+                                The graph starts with all color light curves dispayed together.
+                                You can choose to look at all SNe of a certain color by selecting the color from the Color
+                                drop-down menu. To look at the error measurements of the colors absolute magnitude you can toggle the
+                                Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
+                                click once on a SNe you want to toggle after the initial double-click.
+                            </p></li>
+                            <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/31.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/31.embed?autosize=false&showlink=false"></iframe>
+                                <p>
+                                This graph displays a color light curve for Type IIP Supernovae (SNe) from SOUSA, 
+                                all 15 colors are some combination of the UVOT filters. 
+                                The graph starts with all color light curves dispayed together.
+                                You can choose to look at all SNe of a certain color by selecting the color from the Color
+                                drop-down menu. To look at the error measurements of the colors absolute magnitude you can toggle the
+                                Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
+                                click once on a SNe you want to toggle after the initial double-click.
+                            </p></li>
                         </ul>
                     </div>
                 </div>
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        slider_one();
-                        slider_two();
-                        });
 
-                        function slider_one() {
+                <div id="Colordiag">
+                    <h2>Swift Supernovae UVOT Color-Color Diagram</h2>
+                    <h2><a id="colDiag" href= "https://alexcrabt.pythonanywhere.com/">Color-Color Diagram</a></h2>
+                </div>
+
+                <script type="text/javaScript">
+                document.addEventListener("DOMContentLoaded", function () {
+                    slider_one();
+                    slider_two();
+                    });
+
+                    function slider_one() {
                         var one = new Splide("#SNelight", {
                             type: "loop",
                         }).mount();
-                        }
+                    }
 
-                        function slider_two() {
-                        var one = new Splide("#SNecolor", {
+                    function slider_two() {
+                        var two = new Splide("#SNecolor", {
                             type: "loop",
                         }).mount();
-                        }
-
+                    }
                 </script>
+             
         </section>
         <!--Contact-->
         <section id= "contact" class="sect contact">
@@ -412,10 +473,11 @@
                     Alexander Crabtree.
                 </p>
         </footer>
-        <script src="webjs.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+        <script type="text/javascript" src="webjs.js"></script>
 
     </body>
 

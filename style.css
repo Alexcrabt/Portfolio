@@ -450,6 +450,26 @@ textarea:focus{
     text-align: center;
 }
 
+#SNelight{
+    margin-top: 10vh;
+}
+
+#SNecolor{
+    margin-top: 10vh;
+}
+
+#Colordiag{
+    margin-top: 10vh;
+}
+
+#sousa, #sousa:link, #sousa:visited, #colDiag, #colDiag:link, #colDiag:visited{
+    color: rgb(38, 207, 38);
+}
+
+#Colordiag a{
+    margin-top: 50vh;
+}
+
 /*Contact Me*/
 .contact{
     background-color: black;
