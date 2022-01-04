@@ -85,13 +85,14 @@
                 </div>
                 
                 <div class="about-me text-center">
-                    <p>Howdy, I am Alexander Crabtree! I was born, raised, and am currently still living in Texas. 
+                    <p>Howdy, my name is Alexander Crabtree! I was born, raised, and am currently still living in Texas. 
                         I am a recent Alumni of Texas A&M University where I graduated with a B.S. in Mathematics and Minors in Physics & Astrophysics. 
-                        It should be no surprise then that I love these subjects. I am currently working with Texas A&Ms AGGIENOVA research group, the research 
-                        I have been focused on the most has been writing Python scripts to gather data to further develop the AGGIENOVA Swift Supernovae Database. 
-                        I have also been working to create Python scripts that take a Supernova Type input and uses Supernovae from the AGGIENOVA database to return 
-                        either a filter light curve graph, a color light curve graph, or a color-color diagram of all relevant Supernovae. In my free time I challenge 
-                        myself by learning new things, I enjoy reading immensely, and I have been working on my Shogi skills!
+                        It should be no surprise then that I love these subjects. I have worked with Texas A&M's AGGIENOVA research group, the research 
+                        I had focused on the most was writing Python scripts to gather data to further develop the <a id="sousa" href="https://pbrown801.github.io/SOUSA/">Swift Optical/Ultraviolet Supernova Archive (SOUSA)</a>. 
+                        I also worked to create Python scripts that take a Supernova Type input and use the Supernovae from the AGGIENOVA database to create 
+                        either a filter light curve graph, a color light curve graph, or a color-color diagram of all relevant Supernovae. Most recently I have been working
+                        as a Physics and Math Tutor. In my free time I like to challenge myself by learning new things, recently I have started to learn to 
+                        ride a skateboard and do some basic tricks!
                     </p>
 
                 </div>
@@ -105,13 +106,13 @@
                     </div>
                     <div class="abt-column abt-right">
                         <h4 class="ex">Experience</h4>
-                        <p class="ex1">Research Assistant</p>
-                        <p class="ex2">Texas A&M AGGIENOVA, College Station, TX</p>
-                        <p class="ex3">Aug 2020-Current</p>
-                        <br>
-                        <p class="ex1">Math/Physics Tutor</p>
+                        <p class="ex1">Physics/Math Tutor</p>
                         <p class="ex2">Education One, Frisco, TX</p>
                         <p class="ex3">Sep 2021-Current</p>
+                        <br>
+                        <p class="ex1">Research Assistant</p>
+                        <p class="ex2">Texas A&M AGGIENOVA, College Station, TX</p>
+                        <p class="ex3">Aug 2020-Sept 2021</p>
                     </div>
                 </div>
             </div>
@@ -174,7 +175,49 @@
                                     search bars to more easily find data using JavaScript.
                                 </p>
                                 <p class="card-lang">
-                                    HTML CSS JavaScript
+                                    HTML | CSS | JavaScript
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="port python">
+                        <div class="card text-left">
+                            <div class="card-body">
+                                <h5 class="card-head">
+                                    Swift Supernovae Color-Color Diagram
+                                </h5>
+                                <a href= "https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/ColorColorDiagram_Plotly.py" target="_blank">
+                                    <img src="./ColorColorDiagram.png" class= "card-img">
+                                </a>
+                                <p class="card-text">
+                                    Used Python's Panda Library with Dash to read data for all supernovae names in real time after 
+                                    supernova type and date range is given. The resulting graph is a color-color diagram for the 
+                                    supernovae type, user can switch between any of the 15 colors on both the y and x axis.
+                                </p>
+                                <p class="card-lang">
+                                    Python | Dash
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="port python">
+                        <div class="card text-left">
+                            <div class="card-body">
+                                <h5 class="card-head">
+                                    Swift Supernovae UVOT Color Light Curve Grapher
+                                </h5>
+                                <a href= "https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/ColorTimePlotly_v2.py" target="_blank">
+                                    <img src="./Color_LightCurves.png" class= "card-img">
+                                </a>
+                                <p class="card-text">
+                                    Used Pandas and Plotly in Python script to read data on file
+                                    for all supernovae names in Swift Supernovae Database. The graph created is a color light 
+                                    curve graph with filter light curves to compare to associated color.
+                                </p>
+                                <p class="card-lang">
+                                    Python
                                 </p>
                             </div>
                         </div>
@@ -237,7 +280,7 @@
                                     with the Geocode API.
                                 </p>
                                 <p class="card-lang">
-                                    Python Google Geocode API
+                                    Python | Google Geocode API
                                 </p>
                             </div>
                         </div>
@@ -250,7 +293,7 @@
                                     Swift Supernovae Flux-to-Luminosity Converter
                                 </h5>
                                 <a href="https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/Lumniosity_Converter.py" target="_blank">
-                                    <img src="./Luminosity-Converter.png" class="card-img">
+                                    <img src="./Luminosity_Converter.png" class="card-img">
                                 </a>
                                 <p class="card-text">
                                     Created code to convert Flux data to Luminosity. This code was implemented 
@@ -299,7 +342,7 @@
                                     The HTML code was then combined into a index.html file.
                                 </p>
                                 <p class="card-lang">
-                                 Python HTML 
+                                 Python | HTML 
                                 </p>
                             </div>
                         </div>
@@ -412,9 +455,9 @@
                     </div>
                 </div>
 
-                <div id="Colordiag">
+                <div id="Colordiag" class="colcoldiag">
                     <h2>Swift Supernovae SOUSA Graphs</h2>
-                    <h2><a id="colDiag" href= "https://alexcrabt.pythonanywhere.com/">SOUSA Graphs Dash App</a></h2>
+                    <h3><a id="colDiag" href= "https://alexcrabt.pythonanywhere.com/">SOUSA Graphs Dash App</a></h3>
                 </div>
 
                 <script type="text/javaScript">

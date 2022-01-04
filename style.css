@@ -446,9 +446,29 @@ textarea:focus{
 }
 
 .graphs-text p{
+    display: block;
     font-size: 1.5vw;
     text-align: center;
+    position: relative;
 }
+
+.splide h2, .colcoldiag h2{
+    font-size: 2.2vw;
+    font-weight: 400;
+}
+
+.colcoldiag h3{
+    font-size: 1.8vw;
+}
+
+.splide p{
+    font-size: 1.4vw;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+
 
 #SNelight{
     margin-top: 10vh;
