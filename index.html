@@ -23,513 +23,533 @@
     </head>
 
     <body id="main" class="main">
-        <!--<canvas id="canvas" width="400px" height="400px"></canvas>-->
+
+        <!--Site Wide Container-->
+        <div id="container">
+
+            <!--Navigation-->
+            <nav class="nav">
+                <button class="nav-tog " type="button" data-toggle="collapse" data-target=".navbar"><span class="iconify" data-icon="uil:bars" data-inline="false"></span></button>
+                <ul class="navbar collapse d-sm-inline-flex d-md-inline-flex">
+                    <li><a href="#intro" ><button class="nav-btn" onclick="filterSelectionNavbar('intro')" ><span class="iconify" data-icon="fa-home" data-inline="True" ></span><div class="nav-text">Home</div></button></a></li>
+                    <li><a href="#about"><button class="nav-btn" onclick="filterSelectionNavbar('about')" ><span class="iconify" data-icon="bi:person-lines-fill" data-inline="True"></span><div class="nav-text">About Me</div></button></a></li>
+                    <li><a href="#projects"><button class="nav-btn" onclick="filterSelectionNavbar('projects')" ><span class="iconify" data-icon="clarity:briefcase-solid" data-inline="True"></span><div class="nav-text">Projects</div></button></a></li>
+                    <li><a href="#graphs"><button class="nav-btn" onclick="filterSelectionNavbar('graphs')" ><span class="iconify" data-icon="octicon:graph-16"></span><div class="nav-text">Graphs</div></button></a></li>
+                    <li><a href="./Resume.pdf"><button class="nav-btn"><span class="iconify" data-icon="carbon:document-pdf" data-inline="True"></span><div class="nav-text">Resume</div></button></a></li>
+                    <li><a href="#contact"><button class="nav-btn" onclick="filterSelectionNavbar('contact')" ><span class="iconify" data-icon="clarity:email-solid" data-inline="True"></span><div class="nav-text">Contact Me</div></button></a></li>
+                </ul>
+            </nav>
         
-        <!--Navigation-->
-        <nav class="nav">
-            <button class="nav-tog " type="button" data-toggle="collapse" data-target=".navbar"><span class="iconify" data-icon="uil:bars" data-inline="false"></span></button>
-            <ul class="navbar collapse d-sm-inline-flex d-md-inline-flex">
-                <li><a href="#intro" ><button class="nav-btn" onclick="filterSelectionNavbar('intro')" ><span class="iconify" data-icon="fa-home" data-inline="True" ></span><div class="nav-text">Home</div></button></a></li>
-                <li><a href="#about"><button class="nav-btn" onclick="filterSelectionNavbar('about')" ><span class="iconify" data-icon="bi:person-lines-fill" data-inline="True"></span><div class="nav-text">About Me</div></button></a></li>
-                <li><a href="#projects"><button class="nav-btn" onclick="filterSelectionNavbar('projects')" ><span class="iconify" data-icon="clarity:briefcase-solid" data-inline="True"></span><div class="nav-text">Projects</div></button></a></li>
-                <li><a href="#graphs"><button class="nav-btn" onclick="filterSelectionNavbar('graphs')" ><span class="iconify" data-icon="octicon:graph-16"></span><div class="nav-text">Graphs</div></button></a></li>
-                <li><a href="#contact"><button class="nav-btn" onclick="filterSelectionNavbar('contact')" ><span class="iconify" data-icon="clarity:email-solid" data-inline="True"></span><div class="nav-text">Contact Me</div></button></a></li>
-                <li><a href="./Resume.pdf"><button class="nav-btn"><span class="iconify" data-icon="carbon:document-pdf" data-inline="True"></span><div class="nav-text">Resume</div></button></a></li>
-            </ul>
-        </nav>
         
-        <!--Introduction-->
-        <section id="intro" class="sect intro">
-            <div class="intro-text text-center">
-                <h3 class="howdy">Howdy, my name is</h3>
-                <h1 class="name"><b>Alexander Crabtree.</b></h1>
-                <h2 class="job">Mathematics Graduate,
-                <br> Astrophile,
-                <br> Programming Enthusiast,</h2>
-                <h5 class="job">Coffee Connoisseur.</h5>
-            </div>
-        </section>
+            <!--Introduction Section-->
+            <section id="intro" class="sect intro">
+                <div class="intro-text text-center">
+                    <h3 class="howdy">Howdy, my name is</h3>
+                    <h1 class="name"><b>Alexander Crabtree.</b></h1>
+                    <h2 class="job">Mathematics Graduate,
+                    <br> Astrophile,
+                    <br> Programming Enthusiast,
+                    <br> Coffee Connoisseur.</h2>
+                </div>
+            </section>
 
-        <!--About Me-->
-        <section id="about" class="sect about">
+            <!--About Me-->
+            <section id="about" class="sect about">
 
-            <div id="sidebar-l" class="about-sidebar">
-                <h5>Skills</h5>
-                <li><span class="iconify" data-icon="bx:bxl-python" data-inline="false"></span><div class="side-text">Python</div></li>
-                <li><span class="iconify" data-icon="bx:bxs-file-html" data-inline="false"></span><div class="side-text">HTML</div></li>
-                <li><span class="iconify" data-icon="bx:bxs-file-css" data-inline="false"></span><div class="side-text">CSS</div></li>
-                <li><span class="iconify" data-icon="carbon:sql" data-inline="false"></span></span><div class="side-text">SQL</div></li>
-                <li><span class="iconify" data-icon="ic:baseline-web" data-inline="false"></span><div class="side-text">Web Scraping</div></li>
-                <li><span class="iconify" data-icon="file-icons:latex" data-inline="false"></span><div class="side-text">Latex</div></li>
-            </div>
-            
-            <div id="sidebar-r" class="about-sidebar">
-                <h5>Interests</h5>
-                <li><span class="iconify" data-icon="fluent:math-format-professional-24-filled" data-inline="false"></span><div class="side-text">Mathematics</div></li>
-                <li><span class="iconify" data-icon="clarity:atom-line" data-inline="false"></span><div class="side-text">Physics</div></li>
-                <li><span class="iconify" data-icon="mdi:telescope" data-inline="false"></span><div class="side-text">Astronomy</div></li>
-                <li><span class="iconify">&#9750;</span><div class="side-text">Shogi</div></li>
-                <li><span class="iconify" data-icon="grommet-icons:coffee" data-inline="false"></span><div class="side-text">Coffee</div></li>
-                <li><span class="iconify" data-icon="uil:books" data-inline="false"></span><div class="side-text">Reading</div></li>
-                <li><span class="iconify" data-icon="la:running" data-inline="false"></span><div class="side-text">Running</div></li>
-            </div>
-
-            <div id= "text" class="about-text text-center">
-                <div class="about-header">
-                    <h1>ABOUT ME</h1>
-                <img src="./Yosemite_Falls.jpg" class="about-img">
-                <br>
-                <br>
-                <button class="btn-hob" onclick="openSkll()">Skills</button>
-                <button class="btn-hob" onclick="openHob()">Interests</button>
+                <div id="sidebar-l" class="about-sidebar">
+                    <h5>Skills</h5>
+                    <li><span class="iconify" data-icon="bx:bxl-python" data-inline="false"></span><div class="side-text">Python</div></li>
+                    <li><span class="iconify" data-icon="bx:bxs-file-html" data-inline="false"></span><div class="side-text">HTML</div></li>
+                    <li><span class="iconify" data-icon="bx:bxs-file-css" data-inline="false"></span><div class="side-text">CSS</div></li>
+                    <li><span class="iconify" data-icon="carbon:sql" data-inline="false"></span></span><div class="side-text">SQL</div></li>
+                    <li><span class="iconify" data-icon="ic:baseline-web" data-inline="false"></span><div class="side-text">Web Scraping</div></li>
+                    <li><span class="iconify" data-icon="file-icons:latex" data-inline="false"></span><div class="side-text">Latex</div></li>
                 </div>
                 
-                <div class="about-me text-center">
-                    <p>Howdy, my name is Alexander Crabtree! I was born, raised, and am currently still living in Texas. 
-                        I am a recent Alumni of Texas A&M University where I graduated with a B.S. in Mathematics and Minors in Physics & Astrophysics. 
-                        It should be no surprise then that I love these subjects. I have worked with Texas A&M's AGGIENOVA research group, the research 
-                        I had focused on the most was writing Python scripts to gather data to further develop the <a id="sousa" href="https://pbrown801.github.io/SOUSA/">Swift Optical/Ultraviolet Supernova Archive (SOUSA)</a>. 
-                        I also worked to create Python scripts that take a Supernova Type input and use the Supernovae from the AGGIENOVA database to create 
-                        either a filter light curve graph, a color light curve graph, or a color-color diagram of all relevant Supernovae. Most recently I have been working
-                        as a Physics and Math Tutor. In my free time I like to challenge myself by learning new things, recently I have started to learn to 
-                        ride a skateboard and do some basic tricks!
-                    </p>
-
-                </div>
-                <div class="about-bttm">
-                    <div class="abt-column abt-left">
-                        <h4 class="ed">Education & Certificates</h4>
-                        <p class="ed1">B.S. in Mathematics</p>
-                        <p class="ed2">Minors in Physics and Astrophysics</p>
-                        <p class="ed3">Texas A&M University, College Station, TX</p>
-                        <p class="ed4">Aug 2017-May 2021</p>
-                        <br>
-                        <p class="ed1">IBM Data Analyst Professional Certificate</p>
-                        <p class="ed2">Coursera, May 2022</p>
-                    </div>
-                    <div class="abt-column abt-right">
-                        <h4 class="ex">Experience</h4>
-                        <br>
-                        <p class="ex1">Associate Analyst</p>
-                        <p class="ex2">Lone Star Analytics, Addison TX</p>
-                        <P class="ex3">Jun 2022-Current</P>
-                        <br>
-                        <p class="ex1">Physics/Math Tutor</p>
-                        <p class="ex2">Education One, Frisco, TX</p>
-                        <p class="ex3">Sep 2021-June 2022</p>
-                        <br>
-                        <p class="ex1">Research Assistant</p>
-                        <p class="ex2">Texas A&M AGGIENOVA, College Station, TX</p>
-                        <p class="ex3">Aug 2020-Sep 2021</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--Projects-->
-        <section id= "projects" class="sect projects">
-            <div class="projects-text text-center">
-                <h1>
-                    PROJECTS
-                </h1>
-                <div id="BtnContainer" class="project-buttons">
-                    <button class="btn-proj" onclick="filterSelection('all')">
-                    All Projects
-                    </button>
-                    <button class="btn-proj" onclick="filterSelection('python')">
-                    Python 
-                    </button>
-                    <button class="btn-proj" onclick="filterSelection('other')">
-                    Other 
-                    </button>
+                <div id="sidebar-r" class="about-sidebar">
+                    <h5>Interests</h5>
+                    <li><span class="iconify" data-icon="fluent:math-format-professional-24-filled" data-inline="false"></span><div class="side-text">Mathematics</div></li>
+                    <li><span class="iconify" data-icon="clarity:atom-line" data-inline="false"></span><div class="side-text">Physics</div></li>
+                    <li><span class="iconify" data-icon="mdi:telescope" data-inline="false"></span><div class="side-text">Astronomy</div></li>
+                    <li><span class="iconify" data-icon="la:running" data-inline="false"></span><div class="side-text">Running</div></li>
+                    <li><span class="iconify" data-icon="la:hiking" data-inline="false"></span><div class="side-text">Hiking</div></li>
+                    <li><span class="iconify" data-icon="grommet-icons:coffee" data-inline="false"></span><div class="side-text">Coffee</div></li>
+                    <li><span class="iconify" data-icon="uil:books" data-inline="false"></span><div class="side-text">Reading</div></li>
+                    
+                    <li><span class="iconify">&#9750;</span><div class="side-text">Shogi</div></li>
                 </div>
 
-
-                <!--Portfolio Gallery-->
-                <div class="card-grid">
-                    <div class="port python">
-                        <div class="card text-left">
-                            <div class="card-body">
-                                <h5 class="card-head">
-                                    Swift Supernovae Data Web Scraper
-                                </h5>
-                                <a href="https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/Data_Grabber.py" target="_blank">
-                                    <img src="./Data_Grabber.png" class="card-img">
-                                </a>
-                                <p class="card-text">
-                                    Developed Python code to web scrape Astronomy data from Astronomy databases 
-                                    such as the NASA/IPAC Extragalactic Database (NED) and the Transient Name Server. 
-                                    Made use of Astropy, Astroquery, Pandas, and BeautifulSoup Python libraries.
-                                </p>
-                                <p class="card-lang">
-                                    Python
-                                </p>
-                            </div>
-                        </div>
+                <div id= "text" class="about-text text-center">
+                    <div class="about-header">
+                        <h1>ABOUT ME</h1>
+                    <img src="./Yosemite_Falls.jpg" class="about-img">
+                    <br>
+                    <br>
+                    <button class="btn-hob" onclick="openSkll()">Skills</button>
+                    <button class="btn-hob" onclick="openHob()">Interests</button>
                     </div>
+                    
+                    <div class="about-me text-center">
+                        <p>Howdy, my name is Alexander Crabtree! I was born, raised, and am currently still living in Texas. 
+                            I am a recent Alumni of Texas A&M University where I graduated with a B.S. in Mathematics and Minors in Physics & Astrophysics. 
+                            It should be no surprise then that I love these subjects. I have worked with Texas A&M's AGGIENOVA research group, the research 
+                            I had focused on the most was writing Python scripts to gather data to further develop the <a id="sousa" href="https://pbrown801.github.io/SOUSA/">Swift Optical/Ultraviolet Supernova Archive (SOUSA)</a>. 
+                            I also worked to create Python scripts that take a Supernova Type input and use the Supernovae from the AGGIENOVA database to create 
+                            either a filter light curve graph, a color light curve graph, or a color-color diagram of all relevant Supernovae. Most recently I have been working
+                            as a Physics and Math Tutor. In my free time I like to challenge myself by learning new things, recently I have started to learn to 
+                            ride a skateboard and do some basic tricks!
+                        </p>
 
-                    <div class="port python">
-                        <div class="card text-left">
-                            <div class="card-body">
-                                <h5 class="card-head">
-                                    Swift Supernovae All Light Curves App
-                                </h5>
-                                <a href= "https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/Swift_AllLightCurves_App.py" target="_blank">
-                                    <img src="./Swift_AllLightCurves_App.png" class= "card-img">
-                                </a>
-                                <p class="card-text">
-                                    Used Pandas and Plotly-Dash in Python script to read data on file
-                                    for all supernovae names in Swift Supernovae Database. The app takes inputs for 3 different
-                                    graph types and returns the graphs Filter Light Curve, Color Light Curve, and Color-Color Diagram.
-                                </p>
-                                <p class="card-lang">
-                                    Python | Dash
-                                </p>
-                            </div>
-                        </div>
                     </div>
-
-                    <div class="port other">
-                        <div class="card text-left">
-                            <div class="card-body">
-                                <h5 class="card-head">
-                                    Swift Supernovae Database
-                                </h5>
-                                <a href="https://alexcrabt.github.io/AGGIENOVA_Swift_Data_Projects/" target="_blank">
-                                    <img src="./Swift_Database.png" class="card-img">
-                                </a>
-                                <p class="card-text">
-                                    Made use of Astonomical data collected with my Swift Data Web Scraper
-                                    to build upon the Swift Supernovae Database. I also developed dynamic 
-                                    search bars to more easily find data using JavaScript.
-                                </p>
-                                <p class="card-lang">
-                                    HTML | CSS | JavaScript
-                                </p>
-                            </div>
+                    <div class="about-bttm">
+                        <div class="abt-column abt-left">
+                            <h4 class="ed">Education & Certificates</h4>
+                            <p class="ed1">M.S. in Applied Physics</p>
+                            <p class="ed3">Johns Hopkins, Baltimore, MD</p>
+                            <p class="ed4">Jan 2024-Present</p>
+                            <br>
+                            <p class="ed1">B.S. in Mathematics</p>
+                            <p class="ed2">Minors in Physics and Astrophysics</p>
+                            <p class="ed3">Texas A&M University, College Station, TX</p>
+                            <p class="ed4">Aug 2017-May 2021</p>
+                            <br>
+                            <p class="ed1">IBM Data Analyst Professional Certificate</p>
+                            <p class="ed2">Coursera, May 2022</p>
                         </div>
-                    </div>
-
-                    <div class="port python">
-                        <div class="card text-left">
-                            <div class="card-body">
-                                <h5 class="card-head">
-                                    Swift Supernovae Color-Color Diagram
-                                </h5>
-                                <a href= "https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/ColorColorDiagram_Plotly.py" target="_blank">
-                                    <img src="./ColorColorDiagram.png" class= "card-img">
-                                </a>
-                                <p class="card-text">
-                                    Used Python's Panda Library with Dash to read data for all supernovae names in real time after 
-                                    supernova type and date range is given. The resulting graph is a color-color diagram for the 
-                                    supernovae type, user can switch between any of the 15 colors on both the y and x axis.
-                                </p>
-                                <p class="card-lang">
-                                    Python | Dash
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="port python">
-                        <div class="card text-left">
-                            <div class="card-body">
-                                <h5 class="card-head">
-                                    Swift Supernovae UVOT Color Light Curve Grapher
-                                </h5>
-                                <a href= "https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/ColorTimePlotly_v2.py" target="_blank">
-                                    <img src="./Color_LightCurves.png" class= "card-img">
-                                </a>
-                                <p class="card-text">
-                                    Used Pandas and Plotly in Python script to read data on file
-                                    for all supernovae names in Swift Supernovae Database. The graph created is a color light 
-                                    curve graph with filter light curves to compare to associated color.
-                                </p>
-                                <p class="card-lang">
-                                    Python
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="port python">
-                        <div class="card text-left">
-                            <div class="card-body">
-                                <h5 class="card-head">
-                                    Swift Supernovae UVOT Filter Light Curve Grapher
-                                </h5>
-                                <a href= "https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/vbcurves_plotely_v2.py" target="_blank">
-                                    <img src="./vbcurves_plotely_v2.png" class= "card-img">
-                                </a>
-                                <p class="card-text">
-                                    Employed the Pandas and Plotly Python libraries to design code to read data on file
-                                    for all supernovae names in Swift Supernovae Database. Then proceeds to graph all available
-                                    data on the UVOT filters.
-                                </p>
-                                <p class="card-lang">
-                                    Python
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="port python">
-                        <div class="card text-left">
-                            <div class="card-body">
-                                <h5 class="card-head">
-                                    Geocode Address Validator
-                                </h5>
-                                <a href="https://github.com/Alexcrabt/Projects/blob/main/Address_Validation/Address_Validation.py" target="_blank">
-                                    <img src="./Address_Validation.png" class="card-img">
-                                </a>
-                                <p class="card-text">
-                                    Utilized Pythons Pandas and Geopy libraries and Googles Geocode API to
-                                    develope code that takes given address data and validates their addresses
-                                    with the Geocode API.
-                                </p>
-                                <p class="card-lang">
-                                    Python | Google Geocode API
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="port python">
-                        <div class="card text-left">
-                            <div class="card-body">
-                                <h5 class="card-head">
-                                    Swift Supernovae Flux-to-Luminosity Converter
-                                </h5>
-                                <a href="https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/Lumniosity_Converter.py" target="_blank">
-                                    <img src="./Luminosity_Converter.png" class="card-img">
-                                </a>
-                                <p class="card-text">
-                                    Created code to convert Flux data to Luminosity. This code was implemented 
-                                    into the larger AGGIENOVA pipeline and used to turn MJD, Wavelength, Flux data 
-                                    to MJD, Wavelength, Luminosity Data.
-                                </p>
-                                <p class="card-lang">
-                                    Python
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="port python">
-                        <div class="card text-left">
-                            <div class="card-body">
-                                <h5 class="card-head">
-                                    Swift Supernovae Date Web Scraper
-                                </h5>
-                                <a href="https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/SN_Date_Parser.py" target="_blank">
-                                    <img src="./SN_Data_Parser.png" class="card-img">
-                                </a>
-                                <p class="card-text">
-                                    Made use of Pythons Pandas and BeautifulSoup libraries to generate code 
-                                    that web scrapes Supernovae date data from the Transient Name Server.
-                                </p>
-                                <p class="card-lang">
-                                    Python
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="port python other">
-                        <div class="card text-left">
-                            <div class="card-body">
-                                <h5 class="card-head">
-                                    Swift Supernovae Database HTML Maker
-                                </h5>
-                                <a href="https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/Swift_html_maker.py" target="_blank">
-                                    <img src="./Swift_html_maker.png" class="card-img">
-                                </a>
-                                <p class="card-text">
-                                    Developed code in Python to go through a list of Supernovae names then alter 
-                                    a section of HTML code depending on the data present for each Supernova.
-                                    The HTML code was then combined into a index.html file.
-                                </p>
-                                <p class="card-lang">
-                                 Python | HTML 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="port python">
-                        <div class="card text-left">
-                            <div class="card-body">
-                                <h5 class="card-head">
-                                    Swift Supernovae Explosion Date
-                                </h5>
-                                <a href="https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/Exp_Dat_Trans.py" target="_blank">
-                                    <img src="./Exp_Dat_Trans.png" class="card-img">
-                                </a>
-                                <p class="card-text">
-                                    Using the Pandas library, developed code to find Supernovae names in seperate .csv 
-                                    files then transfer the Explosion Dates for those names from one .csv file to the
-                                </p>
-                                <p class="card-lang">
-                                    Python
-                                </p>
-                            </div>
+                        <div class="abt-column abt-right">
+                            <h4 class="ex">Experience</h4>
+                            <p class="ex1">Lead Analyst</p>
+                            <p class="ex2">Lone Star Analytics, Addison TX</p>
+                            <P class="ex3">Aug 2023-Present</P>
+                            <br>
+                            <p class="ex1">Analyst</p>
+                            <p class="ex2">Lone Star Analytics, Addison TX</p>
+                            <P class="ex3">Feb 2023-Aug 2023</P>
+                            <br>
+                            <p class="ex1">Associate Analyst</p>
+                            <p class="ex2">Lone Star Analytics, Addison TX</p>
+                            <P class="ex3">Jun 2022-Feb 2023</P>
+                            <br>
+                            <p class="ex1">Physics/Math Tutor</p>
+                            <p class="ex2">Education One, Frisco, TX</p>
+                            <p class="ex3">Sep 2021-June 2022</p>
+                            <br>
+                            <p class="ex1">Research Assistant</p>
+                            <p class="ex2">Texas A&M AGGIENOVA, College Station, TX</p>
+                            <p class="ex3">Aug 2020-Sep 2021</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--Plots-->
-        <section id= "graphs" class="sect graphs">
-            <div class="graphs-text text-center">
-                <h1>
-                    Graphs
-                </h1>
-                <p>All graphs are created using supernovae from the <a id="sousa" href="https://pbrown801.github.io/SOUSA/">Swift's Optical/Ultraviolet Supernova Archive (SOUSA)</a>. 
-                    Below are a few light curve graphs I created for type Ib, Ic, and IIP supernovae using primarily the Plotly Python Library. There is also a link that takes you
-                    to a site where you can further explore the graphs I've made. These graphs are best viewed on a computer, to select a specific supernovae
-                    or supernovae group in the graphs below double click on the name in the legend.</p>
-                <br>
-                <div id="SNelight" class="splide">
-                    <h2>Swift Supernovae UVOT Filter Light Curve Graphs</h2>
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/2.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/2.embed?autosize=false&showlink=false"></iframe>
-                                <p>
-                                This graph dispays a light curve for the UVOT filters of Type Ib Supernovae (SNe) from SOUSA.
-                                    The graph starts with all filters light curves dispayed together.
-                                    You can choose to look at all SNe of a certain filter by selecting the filter from the Filter 
-                                    drop-down menu. To look at the error measurements of the filters absolute magnitudes you can toggle the
+            </section>
+
+            <!--Projects-->
+            <section id= "projects" class="sect projects">
+                <div class="projects-text text-center">
+                    <h1>
+                        PROJECTS
+                    </h1>
+                    <div id="BtnContainer" class="project-buttons">
+                        <button class="btn-proj" onclick="filterSelection('all')">
+                        All Projects
+                        </button>
+                        <button class="btn-proj" onclick="filterSelection('python')">
+                        Python 
+                        </button>
+                        <button class="btn-proj" onclick="filterSelection('other')">
+                        Other 
+                        </button>
+                    </div>
+
+
+                    <!--Portfolio Gallery-->
+                    <div class="card-grid">
+                        <div class="port python">
+                            <div class="card text-left">
+                                <div class="card-body">
+                                    <h5 class="card-head">
+                                        Swift Supernovae Data Web Scraper
+                                    </h5>
+                                    <a href="https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/Data_Grabber.py" target="_blank">
+                                        <img src="./Data_Grabber.png" class="card-img">
+                                    </a>
+                                    <p class="card-text">
+                                        Developed Python code to web scrape Astronomy data from Astronomy databases 
+                                        such as the NASA/IPAC Extragalactic Database (NED) and the Transient Name Server. 
+                                        Made use of Astropy, Astroquery, Pandas, and BeautifulSoup Python libraries.
+                                    </p>
+                                    <p class="card-lang">
+                                        Python
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port python">
+                            <div class="card text-left">
+                                <div class="card-body">
+                                    <h5 class="card-head">
+                                        Swift Supernovae All Light Curves App
+                                    </h5>
+                                    <a href= "https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/Swift_AllLightCurves_App.py" target="_blank">
+                                        <img src="./Swift_AllLightCurves_App.png" class= "card-img">
+                                    </a>
+                                    <p class="card-text">
+                                        Used Pandas and Plotly-Dash in Python script to read data on file
+                                        for all supernovae names in Swift Supernovae Database. The app takes inputs for 3 different
+                                        graph types and returns the graphs Filter Light Curve, Color Light Curve, and Color-Color Diagram.
+                                    </p>
+                                    <p class="card-lang">
+                                        Python | Dash
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port other">
+                            <div class="card text-left">
+                                <div class="card-body">
+                                    <h5 class="card-head">
+                                        Swift Supernovae Database
+                                    </h5>
+                                    <a href="https://alexcrabt.github.io/AGGIENOVA_Swift_Data_Projects/" target="_blank">
+                                        <img src="./Swift_Database.png" class="card-img">
+                                    </a>
+                                    <p class="card-text">
+                                        Made use of Astonomical data collected with my Swift Data Web Scraper
+                                        to build upon the Swift Supernovae Database. I also developed dynamic 
+                                        search bars to more easily find data using JavaScript.
+                                    </p>
+                                    <p class="card-lang">
+                                        HTML | CSS | JavaScript
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port python">
+                            <div class="card text-left">
+                                <div class="card-body">
+                                    <h5 class="card-head">
+                                        Swift Supernovae Color-Color Diagram
+                                    </h5>
+                                    <a href= "https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/ColorColorDiagram_Plotly.py" target="_blank">
+                                        <img src="./ColorColorDiagram.png" class= "card-img">
+                                    </a>
+                                    <p class="card-text">
+                                        Used Python's Panda Library with Dash to read data for all supernovae names in real time after 
+                                        supernova type and date range is given. The resulting graph is a color-color diagram for the 
+                                        supernovae type, user can switch between any of the 15 colors on both the y and x axis.
+                                    </p>
+                                    <p class="card-lang">
+                                        Python | Dash
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port python">
+                            <div class="card text-left">
+                                <div class="card-body">
+                                    <h5 class="card-head">
+                                        Swift Supernovae UVOT Color Light Curve Grapher
+                                    </h5>
+                                    <a href= "https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/ColorTimePlotly_v2.py" target="_blank">
+                                        <img src="./Color_LightCurves.png" class= "card-img">
+                                    </a>
+                                    <p class="card-text">
+                                        Used Pandas and Plotly in Python script to read data on file
+                                        for all supernovae names in Swift Supernovae Database. The graph created is a color light 
+                                        curve graph with filter light curves to compare to associated color.
+                                    </p>
+                                    <p class="card-lang">
+                                        Python
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port python">
+                            <div class="card text-left">
+                                <div class="card-body">
+                                    <h5 class="card-head">
+                                        Swift Supernovae UVOT Filter Light Curve Grapher
+                                    </h5>
+                                    <a href= "https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/vbcurves_plotely_v2.py" target="_blank">
+                                        <img src="./vbcurves_plotely_v2.png" class= "card-img">
+                                    </a>
+                                    <p class="card-text">
+                                        Employed the Pandas and Plotly Python libraries to design code to read data on file
+                                        for all supernovae names in Swift Supernovae Database. Then proceeds to graph all available
+                                        data on the UVOT filters.
+                                    </p>
+                                    <p class="card-lang">
+                                        Python
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port python">
+                            <div class="card text-left">
+                                <div class="card-body">
+                                    <h5 class="card-head">
+                                        Geocode Address Validator
+                                    </h5>
+                                    <a href="https://github.com/Alexcrabt/Projects/blob/main/Address_Validation/Address_Validation.py" target="_blank">
+                                        <img src="./Address_Validation.png" class="card-img">
+                                    </a>
+                                    <p class="card-text">
+                                        Utilized Pythons Pandas and Geopy libraries and Googles Geocode API to
+                                        develope code that takes given address data and validates their addresses
+                                        with the Geocode API.
+                                    </p>
+                                    <p class="card-lang">
+                                        Python | Google Geocode API
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port python">
+                            <div class="card text-left">
+                                <div class="card-body">
+                                    <h5 class="card-head">
+                                        Swift Supernovae Flux-to-Luminosity Converter
+                                    </h5>
+                                    <a href="https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/Lumniosity_Converter.py" target="_blank">
+                                        <img src="./Luminosity_Converter.png" class="card-img">
+                                    </a>
+                                    <p class="card-text">
+                                        Created code to convert Flux data to Luminosity. This code was implemented 
+                                        into the larger AGGIENOVA pipeline and used to turn MJD, Wavelength, Flux data 
+                                        to MJD, Wavelength, Luminosity Data.
+                                    </p>
+                                    <p class="card-lang">
+                                        Python
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port python">
+                            <div class="card text-left">
+                                <div class="card-body">
+                                    <h5 class="card-head">
+                                        Swift Supernovae Date Web Scraper
+                                    </h5>
+                                    <a href="https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/SN_Date_Parser.py" target="_blank">
+                                        <img src="./SN_Data_Parser.png" class="card-img">
+                                    </a>
+                                    <p class="card-text">
+                                        Made use of Pythons Pandas and BeautifulSoup libraries to generate code 
+                                        that web scrapes Supernovae date data from the Transient Name Server.
+                                    </p>
+                                    <p class="card-lang">
+                                        Python
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port python other">
+                            <div class="card text-left">
+                                <div class="card-body">
+                                    <h5 class="card-head">
+                                        Swift Supernovae Database HTML Maker
+                                    </h5>
+                                    <a href="https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/Swift_html_maker.py" target="_blank">
+                                        <img src="./Swift_html_maker.png" class="card-img">
+                                    </a>
+                                    <p class="card-text">
+                                        Developed code in Python to go through a list of Supernovae names then alter 
+                                        a section of HTML code depending on the data present for each Supernova.
+                                        The HTML code was then combined into a index.html file.
+                                    </p>
+                                    <p class="card-lang">
+                                    Python | HTML 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port python">
+                            <div class="card text-left">
+                                <div class="card-body">
+                                    <h5 class="card-head">
+                                        Swift Supernovae Explosion Date
+                                    </h5>
+                                    <a href="https://github.com/Alexcrabt/AGGIENOVA_Swift_Data_Projects/blob/main/www/Exp_Dat_Trans.py" target="_blank">
+                                        <img src="./Exp_Dat_Trans.png" class="card-img">
+                                    </a>
+                                    <p class="card-text">
+                                        Using the Pandas library, developed code to find Supernovae names in seperate .csv 
+                                        files then transfer the Explosion Dates for those names from one .csv file to the
+                                    </p>
+                                    <p class="card-lang">
+                                        Python
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Plots-->
+            <section id= "graphs" class="sect graphs">
+                <div class="graphs-text text-center">
+                    <h1>
+                        Graphs
+                    </h1>
+                    <p>All graphs are created using supernovae from the <a id="sousa" href="https://pbrown801.github.io/SOUSA/">Swift's Optical/Ultraviolet Supernova Archive (SOUSA)</a>. 
+                        Below are a few light curve graphs I created for type Ib, Ic, and IIP supernovae using primarily the Plotly Python Library. There is also a link that takes you
+                        to a site where you can further explore the graphs I've made. These graphs are best viewed on a computer, to select a specific supernovae
+                        or supernovae group in the graphs below double click on the name in the legend.</p>
+                    <br>
+                    <div id="SNelight" class="splide">
+                        <h2>Swift Supernovae UVOT Filter Light Curve Graphs</h2>
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/2.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/2.embed?autosize=false&showlink=false"></iframe>
+                                    <p>
+                                    This graph dispays a light curve for the UVOT filters of Type Ib Supernovae (SNe) from SOUSA.
+                                        The graph starts with all filters light curves dispayed together.
+                                        You can choose to look at all SNe of a certain filter by selecting the filter from the Filter 
+                                        drop-down menu. To look at the error measurements of the filters absolute magnitudes you can toggle the
+                                        Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
+                                        click once on a SNe you want to toggle after the initial double-click.
+                                    </p></li>
+                                <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/25.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/25.embed?autosize=false&showlink=false"></iframe>
+                                    <p>
+                                    This graph dispays a light curve for the UVOT filters of Type Ic Supernovae (SNe) from SOUSA.
+                                        The graph starts with all filters light curves dispayed together.
+                                        You can choose to look at all SNe of a certain filter by selecting the filter from the Filter 
+                                        drop-down menu. To look at the error measurements of the filters absolute magnitudes you can toggle the
+                                        Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
+                                        click once on a SNe you want to toggle after the initial double-click.
+                                </p></li>
+                                <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/15.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/15.embed?autosize=false&showlink=false"></iframe>
+                                    <p>
+                                    This graph displays a light curve for the UVOT filters of Type IIP Supernovae (SNe) from SOUSA.
+                                        The graph starts with all filters light curves dispayed together.
+                                        You can choose to look at all SNe of a certain filter by selecting the filter from the Filter 
+                                        drop-down menu. To look at the error measurements of the filters absolute magnitudes you can toggle the
+                                        Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
+                                        click once on a SNe you want to toggle after the initial double-click.
+                                </p></li>
+                            </ul>
+                        </div>
+                        <br>
+                    </div>
+
+                    <div id="SNecolor" class="splide">
+                        <h2>Swift Supernovae UVOT Color Light Curve Graphs</h2>
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/27.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/27.embed?autosize=false&showlink=false"></iframe>
+                                    <p>
+                                    This graph displays a color light curve for Type Ib Supernovae (SNe) from SOUSA, 
+                                    all 15 colors are some combination of the UVOT filters. 
+                                    The graph starts with all color light curves dispayed together.
+                                    You can choose to look at all SNe of a certain color by selecting the color from the Color
+                                    drop-down menu. To look at the error measurements of the colors absolute magnitude you can toggle the
                                     Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
                                     click once on a SNe you want to toggle after the initial double-click.
                                 </p></li>
-                            <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/25.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/25.embed?autosize=false&showlink=false"></iframe>
-                                <p>
-                                This graph dispays a light curve for the UVOT filters of Type Ic Supernovae (SNe) from SOUSA.
-                                    The graph starts with all filters light curves dispayed together.
-                                    You can choose to look at all SNe of a certain filter by selecting the filter from the Filter 
-                                    drop-down menu. To look at the error measurements of the filters absolute magnitudes you can toggle the
+                                <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="no" src="//plotly.com/~Alexcrabt/29.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/29.embed?autosize=false&showlink=false"></iframe>
+                                    <p>
+                                    This graph displays a color light curve for Type Ic Supernovae (SNe) from SOUSA, 
+                                    all 15 colors are some combination of the UVOT filters. 
+                                    The graph starts with all color light curves dispayed together.
+                                    You can choose to look at all SNe of a certain color by selecting the color from the Color
+                                    drop-down menu. To look at the error measurements of the colors absolute magnitude you can toggle the
                                     Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
                                     click once on a SNe you want to toggle after the initial double-click.
-                            </p></li>
-                            <li class="splide__slide"><iframe width="90%" height="600" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/15.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/15.embed?autosize=false&showlink=false"></iframe>
-                                <p>
-                                This graph displays a light curve for the UVOT filters of Type IIP Supernovae (SNe) from SOUSA.
-                                    The graph starts with all filters light curves dispayed together.
-                                    You can choose to look at all SNe of a certain filter by selecting the filter from the Filter 
-                                    drop-down menu. To look at the error measurements of the filters absolute magnitudes you can toggle the
+                                </p></li>
+                                <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/31.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/31.embed?autosize=false&showlink=false"></iframe>
+                                    <p>
+                                    This graph displays a color light curve for Type IIP Supernovae (SNe) from SOUSA, 
+                                    all 15 colors are some combination of the UVOT filters. 
+                                    The graph starts with all color light curves dispayed together.
+                                    You can choose to look at all SNe of a certain color by selecting the color from the Color
+                                    drop-down menu. To look at the error measurements of the colors absolute magnitude you can toggle the
                                     Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
                                     click once on a SNe you want to toggle after the initial double-click.
-                            </p></li>
-                        </ul>
+                                </p></li>
+                            </ul>
+                        </div>
                     </div>
+                    <!--
+                    <div id="Colordiag" class="colcoldiag">
+                        <h2>Swift Supernovae SOUSA Graphs</h2>
+                        <h3><a id="colDiag" href= "https://alexcrabt.pythonanywhere.com/">SOUSA Graphs Dash App</a></h3>
+                    </div>-->
+
+                    <script type="text/javaScript">
+                    document.addEventListener("DOMContentLoaded", function () {
+                        slider_one();
+                        slider_two();
+                        });
+
+                        function slider_one() {
+                            var one = new Splide("#SNelight", {
+                                type: "loop",
+                            }).mount();
+                        }
+
+                        function slider_two() {
+                            var two = new Splide("#SNecolor", {
+                                type: "loop",
+                            }).mount();
+                        }
+                    </script>
+                
+            </section>
+            <!--Contact-->
+            <section id= "contact" class="sect contact">
+                <div class="contact-text text-center">
+                    <h1>
+                        CONTACT ME
+                    </h1>
                     <br>
-                </div>
-
-                <div id="SNecolor" class="splide">
-                    <h2>Swift Supernovae UVOT Color Light Curve Graphs</h2>
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/27.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/27.embed?autosize=false&showlink=false"></iframe>
-                                <p>
-                                This graph displays a color light curve for Type Ib Supernovae (SNe) from SOUSA, 
-                                all 15 colors are some combination of the UVOT filters. 
-                                The graph starts with all color light curves dispayed together.
-                                You can choose to look at all SNe of a certain color by selecting the color from the Color
-                                drop-down menu. To look at the error measurements of the colors absolute magnitude you can toggle the
-                                Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
-                                click once on a SNe you want to toggle after the initial double-click.
-                            </p></li>
-                            <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="no" src="//plotly.com/~Alexcrabt/29.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/29.embed?autosize=false&showlink=false"></iframe>
-                                <p>
-                                This graph displays a color light curve for Type Ic Supernovae (SNe) from SOUSA, 
-                                all 15 colors are some combination of the UVOT filters. 
-                                The graph starts with all color light curves dispayed together.
-                                You can choose to look at all SNe of a certain color by selecting the color from the Color
-                                drop-down menu. To look at the error measurements of the colors absolute magnitude you can toggle the
-                                Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
-                                click once on a SNe you want to toggle after the initial double-click.
-                            </p></li>
-                            <li class="splide__slide"><iframe width="93%" height="650" frameborder="0" scrolling="yes" src="//plotly.com/~Alexcrabt/31.embed?autosize=false&showlink=false" data-splide-lazy-srcset="//plotly.com/~Alexcrabt/31.embed?autosize=false&showlink=false"></iframe>
-                                <p>
-                                This graph displays a color light curve for Type IIP Supernovae (SNe) from SOUSA, 
-                                all 15 colors are some combination of the UVOT filters. 
-                                The graph starts with all color light curves dispayed together.
-                                You can choose to look at all SNe of a certain color by selecting the color from the Color
-                                drop-down menu. To look at the error measurements of the colors absolute magnitude you can toggle the
-                                Error Bar button. Finally, you can toggle specific SNe by double-clicking SNe in the Legend, to view multiple
-                                click once on a SNe you want to toggle after the initial double-click.
-                            </p></li>
-                        </ul>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="contact-email text-center">
+                        <p>
+                            Alexcrabt21@gmail.com
+                        </p>
                     </div>
-                </div>
+                    <div class="contact-icons text-center">
+                        <a href="https://github.com/Alexcrabt" target="_blank">
+                        <span class="iconify" data-icon="logos-github-icon" data-inline="false"></span>
+                        </a>
+                    </div>
+                <!--</div>
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/xeqvkvzy" method="POST">
+                    <div class="column left contact-form">
+                        <input type="text" id="name-input" name="Name" placeholder="Name">
+                        <input type="subject" id="subject-input" name="Subject" placeholder="Subject">
+                        <input type="email" id="email-input" name="Email" placeholder="Email Address">
+                    </div>
+                    <div class="column right contact-form">
+                        <textarea name="Message" type="text" id="message-input" placeholder="Input Your Message Here" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                    <button type="submit" id="submit-input">Submit</button>
+                </form>-->
+            </section>
 
-                <div id="Colordiag" class="colcoldiag">
-                    <h2>Swift Supernovae SOUSA Graphs</h2>
-                    <h3><a id="colDiag" href= "https://alexcrabt.pythonanywhere.com/">SOUSA Graphs Dash App</a></h3>
-                </div>
-
-                <script type="text/javaScript">
-                document.addEventListener("DOMContentLoaded", function () {
-                    slider_one();
-                    slider_two();
-                    });
-
-                    function slider_one() {
-                        var one = new Splide("#SNelight", {
-                            type: "loop",
-                        }).mount();
-                    }
-
-                    function slider_two() {
-                        var two = new Splide("#SNecolor", {
-                            type: "loop",
-                        }).mount();
-                    }
-                </script>
-             
-        </section>
-        <!--Contact-->
-        <section id= "contact" class="sect contact">
-            <div class="contact-text text-center">
-                <h1>
-                    CONTACT ME
-                </h1>
-                <div class="contact-email text-center">
-                    <p>
-                        acrabtree15@gmail.com
+            <footer>
+                    <p>&copy;
+                        <script>document.write(new Date().getFullYear())</script>
+                        Alexander Crabtree.
                     </p>
-                </div>
-                <div class="contact-icons text-center">
-                    <a href="https://github.com/Alexcrabt" target="_blank">
-                    <span class="iconify" data-icon="logos-github-icon" data-inline="false"></span>
-                    </a>
-                </div>
-            </div>
-            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xeqvkvzy" method="POST">
-                <div class="column left contact-form">
-                    <input type="text" id="name-input" name="Name" placeholder="Name">
-                    <input type="subject" id="subject-input" name="Subject" placeholder="Subject">
-                    <input type="email" id="email-input" name="Email" placeholder="Email Address">
-                </div>
-                <div class="column right contact-form">
-                    <textarea name="Message" type="text" id="message-input" placeholder="Input Your Message Here" rows="6" maxlength="3000" required></textarea>
-                </div>
-                <button type="submit" id="submit-input">Submit</button>
-            </form>
-        </section>
-
-        <footer>
-                <p>Copyrights &copy;
-                    <script>document.write(new Date().getFullYear())</script>
-                    Alexander Crabtree.
-                </p>
-        </footer>
-        
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-        <script type="text/javascript" src="webjs.js"></script>
-
+            </footer>
+            
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+            <script type="text/javascript" src="webjs.js"></script>
+        </div>
     </body>
 
 </html>

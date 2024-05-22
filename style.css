@@ -16,7 +16,9 @@ html, body{
     background-image: url(./stars_black.jpg);
     scroll-behavior:smooth;
     height: 100%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 
 }
 
@@ -60,25 +62,24 @@ textarea:focus{
     position: fixed;
     top: 0;
     background: #505050;
-    width: 100vw;
-    height: 9vh;
-    z-index: 50;
+    width: 100%;
+    height: 88px;
+    z-index: 100;
+
 }
 .navbar{
     list-style-type: none;
-    margin: .4vw;
-    padding: .4vw;
-
 }
 
 .nav-btn{
     border:none;
-    padding: 0 2vw;
+    padding: 0 38.4px;
     color: rgb(100, 216, 255);
     background-color: transparent;
 
 }
 
+/*For Mobile Only*/
 .nav-tog{
     border:none;
     padding: 0 2vw;
@@ -87,24 +88,19 @@ textarea:focus{
     display: none;
 }
 
-.nav-btn:focus{
-    outline: none;
-}
-
 .nav-tog:focus{
     outline: none;
 }
+/*----------------*/
 
-.navbar div{
-    color: rgb(100, 216, 255);
+.nav-btn:focus{
+    outline: none;
 }
 
 .nav-text{
     display:block;
     text-align: center;
-    margin-top: -1vh;
-    padding-top: .2em;
-    font-size: 1vw;
+    font-size: 19.2px;
     position:relative;
     
 }
@@ -114,7 +110,7 @@ textarea:focus{
 }
 
 .iconify{
-    font-size: 4.5vh;
+    font-size: 40px;
 }
 
 /*Intro*/
@@ -122,37 +118,37 @@ textarea:focus{
     display: grid;
     text-align: center;
     width:100%;
-    min-height: 100vh;
+    height: 1080px;
 }
 
 .intro-text{
     display: grid;
     color:rgb(100, 216, 255);
     height: 100%;
-    padding-top: 15vh;
+    padding-top: 250px;
 }
 
 .intro-text h1{
-    font-size: 4.5vw;
+    font-size: 86.4px;
     font-weight: 400;
-    margin-top: -8vh;
+    margin-top: -225px;
 }
 
 .intro-text h2{
-    font-size: 2.8vw;
+    font-size: 53.76px;
     font-weight: 300;
-    margin-top: -10vh;
+    margin-top: -325px;
 }
 
 .intro-text h3{
-    font-size: 2.8vw;
+    font-size: 53.76px;
     font-weight: 300;
 }
 
 .intro-text h5{
-    font-size: 2vw;
+    font-size: 38.4px;
     font-weight: 300;
-    margin-top: -10vh;
+
 }
 
 /*About Me*/
@@ -160,13 +156,13 @@ textarea:focus{
     background-color: black;
     background-image: url(./stars_black.jpg);
     color:rgb(100, 216, 255);
-    min-height: 100vh;
+    min-height: 1080px;
     width: 100%;
-    padding-top: 10vh;
+    padding-top: 108px;
     text-align: center;
 }
 #text h1{
-    font-size: 5vw;
+    font-size: 96px;
     font-weight: 400;
 }
 
@@ -181,8 +177,8 @@ textarea:focus{
     color: rgb(100, 216, 255);
     background-color: #505050;
     border-radius: 20px;
-    font-size: 1.2vw;
-    width:8vw
+    font-size: 23.04px;
+    width:153.6px;
 }
 
 .btn-hob:focus{
@@ -200,11 +196,11 @@ textarea:focus{
   }
 
 .about-me{
-    padding-top: 5vh;
+    padding-top: 54px;
 }
 
 .about-me p{
-    font-size: 1.5vw;
+    font-size: 28.8px;
     text-align: center;
 }
 
@@ -224,8 +220,8 @@ textarea:focus{
     float:right;
     overflow-x: hidden;
     width: 0;
-    line-height: 1vh;
-    padding-top: 10.5vh;
+    line-height: 10.8px;
+    padding-top: 113.4px;
     list-style-type: none;
 }
 
@@ -234,8 +230,8 @@ textarea:focus{
     float:left;
     overflow-x: hidden;
     width: 0;
-    line-height: 1vh;
-    padding-top: 10.5vh;
+    line-height: 10.8px;
+    padding-top: 113.4px;
     list-style-type: none;
 }
 
@@ -250,72 +246,72 @@ textarea:focus{
 }
 
 .about-sidebar h5{
-    font-size: 1.8vw;
+    font-size: 34.56px;
     font-weight: 500;
     text-decoration: underline;
 }
 
 .about-sidebar li{
-    padding: 1.5vh;
+    padding: 34.56px;
 }
 
 .side-text{
     display: block;
     text-align: center;
-    margin-top: -1vh;
+    margin-top: -10.8px;
     padding-top: .8em;
-    font-size: 1.2vw;
+    font-size: 23.04px;
     position: relative;
     
 }
 
 .about-sidebar li .iconify{
-    font-size: 5.5vh;
+    font-size: 59.4px;
 }
 
 .ed{
-    font-size: 2.2vw;
+    font-size: 42.24px;
     font-weight: 500;
-    padding-top: 2vh;
+    padding-top: 21.6px;
     text-decoration: underline;
 }
 
 .ed1{
-    font-size: 1.8vw;
+    font-size: 34.56px;
 }
 
 .ed2{
-    font-size: 1.8vw;
-    margin-top: -3.6vh;
+    font-size: 34.56px;
+    margin-top: -30px;
 }
 
 .ed3{
-    font-size: 1.2vw;
-    margin-top: -2.6vh;
+    font-size: 23.04px;
+    margin-top: -24px;
 }
 
 .ed4{
-    font-size: 1.2vw;
-    margin-top: -2.6vh;
+    font-size: 23.04px;
+    margin-top: -24px;
 }
 
 .ex{
-    font-size: 2.2vw;
+    font-size: 42.24px;
     font-weight: 500;
-    padding-top: 2vh;
+    padding-top: 21.6px;
     text-decoration: underline;
 }
 
 .ex1{
-    font-size: 1.8vw;
+    font-size: 34.56px;
 }
 .ex2{
-    font-size: 1.2vw;
-    margin-top: -2.6vh;
+    font-size: 23.04px;
+    margin-top: -30px;
 }
 .ex3{
-    font-size: 1.2vw;
-    margin-top: -2.6vh;
+    font-size: 23.04px;
+    margin-top: -24px;
 }
 
 .abt-column {
@@ -344,9 +340,9 @@ textarea:focus{
     background-color: black;
     background-image: url(./stars_black.jpg);
     color:rgb(100, 216, 255);
-    min-height: 100vh;
+    min-height: 1080px;
     width: 100%;
-    padding-top: 5vh;
+    padding-top: 54px;
 }
 
 .projects-text{
@@ -356,7 +352,7 @@ textarea:focus{
 }
 
 .projects-text h1{
-    font-size: 5vw;
+    font-size: 96px;
     font-weight: 400;
 }
 
@@ -365,8 +361,8 @@ textarea:focus{
     color: rgb(100, 216, 255);
     background-color: #505050;
     border-radius: 20px;
-    font-size: 1.2vw;
-    width:8vw
+    font-size: 23.04px;
+    width: 153.6px;
 }
 
 .btn-proj{
@@ -388,7 +384,7 @@ textarea:focus{
 .card{
     margin: 10px auto;
     box-shadow: 0 2px 5px 0 rgb(38, 207, 38);
-    height:75vmin;
+    height: 700px;
     width: 100%;
     background:  #606060;
     border-radius: 5px
@@ -396,25 +392,25 @@ textarea:focus{
 
 .card-head{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 28.8px;
 }
 
 .card-text{
     text-align: left;
-    font-size: 1vw;
-    padding-top:2px;
+    font-size: 19.2px;
+    padding-top: 2px;
 
 }
 
 .card-lang{
     position: absolute;
-    font-size: 1vw;
+    font-size: 19.2px;
     bottom: -10px;
 }
 
 .card-img {
     min-width: 100%;
-    max-height: 45vh;
+    max-height: 400px;
   }
 
 .card-body a img{
@@ -434,35 +430,35 @@ textarea:focus{
     background-color: black;
     background-image: url(./stars_black.jpg);
     color:rgb(100, 216, 255);
-    min-height: 100vh;
+    min-height: 1080px;
     width: 100%;
-    padding-top: 10vh;
+    padding-top: 108px;
     text-align: center;
 }
 
 .graphs-text h1{
-    font-size: 5vw;
+    font-size: 96px;
     font-weight: 400;
 }
 
 .graphs-text p{
     display: block;
-    font-size: 1.5vw;
+    font-size: 28.8px;
     text-align: center;
     position: relative;
 }
 
 .splide h2, .colcoldiag h2{
-    font-size: 2.2vw;
+    font-size: 42.24px;
     font-weight: 400;
 }
 
 .colcoldiag h3{
-    font-size: 1.8vw;
+    font-size: 34.56px;
 }
 
 .splide p{
-    font-size: 1.4vw;
+    font-size: 26.88px;
     display: block;
     text-align: center;
     position: relative;
@@ -471,15 +467,15 @@ textarea:focus{
 
 
 #SNelight{
-    margin-top: 10vh;
+    margin-top: 108px;
 }
 
 #SNecolor{
-    margin-top: 10vh;
+    margin-top: 108px;
 }
 
 #Colordiag{
-    margin-top: 10vh;
+    margin-top: 108px;
 }
 
 #sousa, #sousa:link, #sousa:visited, #colDiag, #colDiag:link, #colDiag:visited{
@@ -487,7 +483,7 @@ textarea:focus{
 }
 
 #Colordiag a{
-    margin-top: 50vh;
+    margin-top: 540px;
 }
 
 /*Contact Me*/
@@ -495,9 +491,9 @@ textarea:focus{
     background-color: black;
     background-image: url(./stars_black.jpg);
     color:rgb(100, 216, 255);
-    min-height: 93.3vh;
+    height: 750px;
     width: 100%;
-    padding-top: 5vh;
+    padding-top: 100px;
 }
 .contact-text{
     padding-top: 60px;
@@ -505,26 +501,26 @@ textarea:focus{
     position: relative;
 }
 .contact-text h1{
-    font-size: 5vw;
+    font-size: 96px;
     font-weight: 400;
 }
 
 .contact-text p{
-    font-size: 2.5vw;
+    font-size: 48px;
 }
 .iconify[data-icon=logos-github-icon]{
     background: #fff;
     color:#000;
     box-shadow: 0 4px 16px 4px rgb(38, 207, 38);
-    font-size: 5.5vh;
+    font-size: 59.4px;
 
 }
 .iconify[data-icon=logos-github-icon]:hover{
     box-shadow: 0 4px 16px 4px rgb(38, 207, 38);  
 }
 .contact-form {
-    max-width: 50vw;
-    max-height:50vh;
+    max-width: 960px;
+    max-height: 540px;
     width: 100%;
     text-align: center;
     margin: 20px auto;
@@ -543,7 +539,7 @@ textarea:focus{
 .left {
     margin-right: 2%; 
   }
-#name-input, #email-input, #subject-input{
+/*#name-input, #email-input, #subject-input{
     border:dotted rgb(38, 207, 38); 
     padding: .5em;
     display: block;
@@ -582,7 +578,7 @@ textarea:focus{
 
 #submit-input:hover{
     box-shadow: 0 4px 16px 0 rgb(38, 207, 38);
-}
+}*/
 
 
 /*Footer*/
@@ -592,7 +588,7 @@ footer{
     position:relative;
     bottom: 0;
     width: 100%;
-    height: 6.7vh;
+    height: 72.36px;
     overflow:hidden;
 }
 
@@ -600,741 +596,5 @@ footer p{
     margin: 10px auto;
     text-align: center;
     color: rgb(100, 216, 255);
-    font-size: 1.2vw;
-}
-
-  
-/*Media screen*/
-
-@media only screen and (max-width: 2700px){
-    /*Navbar*/
-
-    .nav{
-        height: 7.5vh;
-    }
-
-    .navbar li:hover .nav-text{
-        color:rgb(38, 207, 38);
-    }
-    .nav-tog:hover{
-        color:rgb(38, 207, 38);
-        
-    }
-    .navbar li:hover .iconify{
-        color:rgb(38, 207, 38);
-    }
-
-    /*Intro*/
-
-    /*About*/
-    
-    /*Projects*/
-
-    /*Contact*/
-
-    /*Footer*/
-}
-
-
-
-@media only screen and (max-width: 1440px){
-    /*Navbar*/
-    .nav{
-        height: 7.5vh;
-    }
-    .nav-text{
-        font-size: 1.4vw;
-    }
-    .iconify{
-        font-size: 3.6vh;
-    }
-    /*Intor*/
-    .intro-text h1{
-        margin-top: -15vh;
-    }
-    
-    .intro-text h2{
-        margin-top: -22vh;
-    }
-    
-    .intro-text h5{
-        margin-top: -24vh;
-    }
-
-    /*About*/
-    #text h1{
-        font-size: 5.5vw;
-    }
-
-    .btn-hob{
-        font-size: 1.6vw;
-        width:10vw
-    }
-
-    .about-me p{
-        font-size: 1.8vw;
-    }
-
-    #sidebar-r, #sidebar-l {
-        padding-top: 8vh;
-    }
-    
-
-    .about-sidebar h5{
-        font-size: 2.4vw;
-    }
-    
-    .side-text{
-        font-size: 1.6vw; 
-        margin-top: -.5vh;
-    }
-
-    .about-sidebar li .iconify{
-        font-size: 4.5vh;
-    }
-
-    .ed{
-        font-size: 2.4vw;
-    }
-    
-    .ed1{
-        font-size: 2vw;
-    }
-    
-    .ed2{
-        font-size: 2vw;
-    }
-    
-    .ed3{
-        font-size: 1.6vw;
-    }
-    
-    .ed4{
-        font-size: 1.6vw;
-    }
-    
-    .ex{
-        font-size: 2.4vw;
-    }
-    
-    .ex1{
-        font-size: 2vw;
-    }
-    .ex2{
-        font-size: 1.6vw;
-    }
-    .ex3{
-        font-size: 1.6vw;
-    }
-
-    /*Projects*/
-    .projects-text h1{
-        font-size: 5.5vw;
-    }
-
-    .btn-proj{
-        font-size: 1.6vw;
-        width:10vw
-    }
-
-    .card-head{
-        font-size: 1.8vw;
-    }
-
-    .card-text{
-        font-size: 1.25vw;
-    }
-
-    .card-lang{
-        font-size: 1.25vw;
-    }
-
-    /*Contact*/
-    .contact{
-        padding-top: 5vh;
-        margin-bottom: 1vh;
-    }
-    .contact-text h1{
-        font-size: 5.5vw;
-    }
-
-    .iconify[data-icon=logos-github-icon]{
-        font-size: 4vh;
-    }
-
-    .contact-form{
-        max-width: 65vw;
-        max-height:60vh;
-    }
-
-    /*Footer*/
-    footer p{
-        font-size: 1.6vw;
-    }
-}
-
-@media only screen and (max-width: 1370px){
-    /*Navbar*/
-    .nav{
-        height: 8.8vh;
-    }
-
-    /*Projects*/
-    .card-head{
-        font-size: 1.6vw;
-    }
-
-    .card-text{
-        font-size: 1.15vw;
-    }
-
-    .card-lang{
-        font-size: 1.15vw;
-    }
-}
-
-@media only screen and (max-width:1030px){
-    /*Navbar*/
-
-    .iconify{
-        font-size: 4.5vh;
-    }
-
-    /*About*/
-
-    /*Projects*/
-    .card{
-        height:72vmin;
-    }
-
-    /*Contac*/
-    .iconify[data-icon=logos-github-icon]{
-        font-size: 5.5vh;
-    }
-    .contact-form{
-        max-width: 73vw;
-        max-height:60vh;
-    }
-}
-
-@media only screen and (max-width: 770px){
-    /*Navbar*/
-    .nav-text{
-        font-size: 2vw;
-    }
-    /*Intro*/
-    .intro-text h1{
-        font-size: 6.5vw;
-        margin-top: -16vh;
-    }
-    
-    .intro-text h2{
-        font-size: 4.5vw;
-        margin-top: -24vh;
-    }
-    
-    .intro-text h3{
-        font-size: 4.5vw;
-    }
-    
-    .intro-text h5{
-        font-size: 3.5vw;
-        margin-top: -26vh;
-    }
-    /*About*/
-    #text h1{
-        font-size: 8vw;
-    }
-
-    .about-img{
-        width: 60%;
-        height: 50%;
-        border-radius: 5px;
-    }
-
-    .btn-hob{
-        font-size: 2vw;
-        width:14vw
-    }
-    .about-me p{
-        font-size: 2.5vw;
-    }
-
-    #sidebar-r {
-        line-height: 1vh;
-        padding-top: 8vh;
-    }
-    
-    #sidebar-l{
-        line-height: 1vh;
-        padding-top: 8vh;
-    }
-
-    .about-sidebar h5{
-        font-size: 2.8vw;
-    }
-    
-    .side-text{
-        font-size: 1.6vw; 
-        margin-top: -.5vh;
-    }
-
-    .about-sidebar li .iconify{
-        font-size: 4.2vh;
-    }
-
-    .abt-column {
-        width: 100%;
-      }
-
-    .ed{
-        font-size: 4vw;
-    }
-    
-    .ed1{
-        font-size: 3.5vw;
-    }
-    
-    .ed2{
-        font-size: 3.5vw;
-        margin-top: -2.8vh;
-    }
-    
-    .ed3{
-        font-size: 2.5vw;
-        margin-top: -2vh;
-    }
-    
-    .ed4{
-        font-size: 2.5vw;
-        margin-top: -2vh;
-    }
-    
-    .ex{
-        font-size: 4vw;
-    }
-    
-    .ex1{
-        font-size: 3.5vw;
-    }
-    .ex2{
-        font-size: 2.5vw;
-        margin-top: -2vh;
-    }
-    .ex3{
-        font-size: 2.5vw;
-        margin-top: -2vh;
-    }
-    /*Projects*/
-    .projects-text h1{
-        font-size: 8vw;
-    }
-
-    .btn-proj{
-        font-size: 2vw;
-        width:14vw;
-    }
-    .card-grid{
-        grid-template-columns: repeat(2,1fr);
-        grid-gap: 25px;
-    }
-
-    .card-head{
-        font-size: 2.5vw;
-    }
-
-    .card-text{
-        font-size: 2vw;
-    }
-
-    .card-lang{
-        font-size: 2vw;
-    }
-    /*Contact*/
-    .contact{
-        margin-bottom: 2vh;
-    }
-    .contact-text h1{
-        font-size: 8vw;
-    }
-
-    .contact-text p{
-        font-size: 4vw;
-    }
-
-    .iconify[data-icon=logos-github-icon]:hover{
-        box-shadow: unset;  
-    }
-
-    .contact-form{
-        max-width: 92vw;
-    }
-
-    /*Footer*/
-    footer p{
-        font-size: 2.4vw;
-    }
-}
-
-@media only screen and (max-width:576px){
-    /*Navbar*/
-    .nav{
-        height: 7vh;
-    }
-
-    .navbar{
-        display: inline-block;
-        margin-top: 40px;
-        background: #505050;
-        height: auto;
-        width: 100%;
-    }
-
-    .nav-btn{
-        padding: 1vh 3vw;
-
-    }
-
-    .nav-text{
-        display: inline-flex;
-        padding: 0 2vw;
-        font-size: 3.2vw;
-    }
-
-    .nav-tog{
-        margin-top: 1.5vh;
-        font-size: 3.8vw;
-        display: block;
-        position: fixed;
-        padding-left: 1rem;
-    }
-
-    .navbar li:hover .nav-text{
-        display: unset;
-    }
-
-
-    .iconify{
-        font-size: 4vh;
-    }
-
-    /*Intro*/
-
-    .intro-text h1{
-        font-size: 9vw;
-        margin-top: -14vh;
-    }
-    
-    .intro-text h2{
-        font-size: 6.5vw;
-        margin-top: -20vh;
-    }
-    
-    .intro-text h3{
-        font-size: 6.5vw;
-    }
-    
-    .intro-text h5{
-        font-size: 4.5vw;
-        margin-top: -22vh;
-    }
-
-    /*About*/
-    #text h1{
-        font-size: 12vw;
-    }
-    
-    .about-img{
-        width: 80%;
-        height: 50%;
-    }
-
-    .btn-hob{
-        font-size: 3.5vw;
-        width:23vw
-    }
-    .about-me p{
-        font-size: 4vw;
-    }
-    
-    #sidebar-l, #sidebar-r{
-        line-height: 1vh;
-        padding-top: 10vh;
-    }
-    #sidebar-l.open, #sidebar-r.open{
-        width: 15%;
-    }
-
-    .about-sidebar h5{
-        font-size: 3.5vw;
-    }
-    
-    .side-text{
-        font-size: 2.1vw; 
-        margin-top: -.5vh;
-    }
-
-    .ed{
-        font-size: 5.5vw;
-    }
-    
-    .ed1{
-        font-size: 4vw;
-    }
-    
-    .ed2{
-        font-size: 4vw;
-        margin-top: -3vh;
-    }
-    
-    .ed3{
-        font-size: 3vw;
-        margin-top: -2.6vh;
-    }
-    
-    .ed4{
-        font-size: 3vw;
-        margin-top: -2.6vh;
-    }
-    
-    .ex{
-        font-size: 5.5vw;
-    }
-    
-    .ex1{
-        font-size: 4vw;
-    }
-    .ex2{
-        font-size: 3vw;
-        margin-top: -2.6vh;
-    }
-    .ex3{
-        font-size: 3vw;
-        margin-top: -2.6vh;
-    }
-
-    /*Projects*/
-    .projects-text h1{
-        font-size: 12vw;
-    }
-
-    .btn-proj{
-        font-size: 3.8vw;
-        width:25vw;
-    }
-
-    .card-grid{
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-    }
-
-    .card{
-        height: 100vmin;
-    }
-
-    .card-head{
-        font-size: 4.2vw;
-    }
-
-    .card-text{
-        font-size: 2.8vw;
-    }
-    .card-lang{
-        font-size: 2.8vw;
-    }
-
-    /*Contact*/
-    .contact{
-        padding-top: 1vh;
-    }
-    .contact-text{
-        padding-bottom: 5vh;
-    }
-    .contact-text h1{
-        font-size: 12vw;
-    }
-
-    .contact-text p{
-        font-size: 5.5vw;
-    }
-
-    .contact-form{
-        max-width: 95vw;
-        max-height: 80vh;
-    }
-
-    .column {
-        float: none;
-        width: 95%;
-    }
-      
-    .right { 
-        width: 94%; 
-    }
-
-    #submit-input{
-        margin-left: 2.5%;    
-        width: 95%;
-    }
-
-    .iconify[data-icon=logos-github-icon]{
-        font-size: 4.5vh;
-    }
-
-    /*Footer*/
-    footer p{
-        font-size: 3.2vw;
-    }
-}
-
-@media only screen and (max-width: 420px){
-    /*Navbar*/
-    .nav{
-        height: 6vh;
-    }
-
-    /*Intro*/
-
-    .intro-text {
-        padding-top: 8vh;
-    }
-
-    .intro-text h1{
-        font-size: 10vw;
-        margin-top: -16vh;
-    }
-    
-    .intro-text h2{
-        font-size: 8vw;
-        margin-top: -28vh;
-    }
-    
-    .intro-text h3{
-        font-size: 8vw;
-    }
-    
-    .intro-text h5{
-        font-size: 6vw;
-        margin-top: -36vh;
-    }
-
-    /*About*/
-    .about-me p{
-        font-size: 4.5vw;
-    }
-
-    #sidebar-l, #sidebar-r{
-        padding-top: 6vh;
-    }
-
-    .about-sidebar li{
-        padding: 1vh;
-    }
-    
-    .side-text{
-        font-size: 2.1vw; 
-    }
-
-    .about-sidebar li .iconify{
-        font-size: 2.8vh;
-    }
-
-    .ed{
-        font-size: 6vw;
-    }
-    
-    .ed1{
-        font-size: 4.5vw;
-    }
-    
-    .ed2{
-        font-size: 4.5vw;
-        margin-top: -3vh;
-    }
-    
-    .ed3{
-        font-size: 3.5vw;
-        margin-top: -2.6vh;
-    }
-    
-    .ed4{
-        font-size: 3.5vw;
-        margin-top: -2.6vh;
-    }
-    
-    .ex{
-        font-size: 6vw;
-    }
-    
-    .ex1{
-        font-size: 4.5vw;
-    }
-    .ex2{
-        font-size: 3.5vw;
-        margin-top: -2.6vh;
-    }
-    .ex3{
-        font-size: 3.5vw;
-        margin-top: -2.6vh;
-    }
-
-    /*Projects*/
-    .card{
-        height: 125vmin;
-    }
-
-    .card-head{
-        font-size: 5vw;
-    }
-
-    .card-text{
-        font-size: 3.6vw;
-    }
-    .card-lang{
-        font-size: 3.6vw;
-    }
-    /*Contact*/
-
-    .contact{
-        margin-bottom: 1.4vh;
-    }
-
-    /*Footer*/
-    footer{
-        height: 5.5vh;
-    }
-    footer p{
-        font-size: 4vw;
-    }
-}
-
-@media only screen and (max-width: 380px){
-    /*Intro*/
-
-    .intro-text h2{
-        margin-top: -26vh;
-    }
-    
-    .intro-text h3{
-        font-size: 8vw;
-    }
-    
-    .intro-text h5{
-        margin-top: -32vh;
-    }
-
-    /*About*/
-    #sidebar-l, #sidebar-r{
-        padding-top: 7vh;
-    }
-
-}
-
-@media only screen and (max-width:330px){
-    /*Navbar*/
-    .navbar{
-        margin-top: 6vh;
-    
-    }
-    
+    font-size: 23.04px;
 }
