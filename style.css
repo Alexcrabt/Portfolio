@@ -465,13 +465,11 @@ textarea:focus {
     transition:
         box-shadow 0.25s ease,
         transform 0.2s ease;
-    border-radius: 4px; /* optional */
+    border-radius: 4px;
 }
 
 .splide__slide a:hover img {
-    box-shadow:
-        0 0 0 3px rgb(38, 207, 38),
-        0 6px 20px rgba(38, 207, 38, 0.6);
+    box-shadow: 0 4px 16px 0 rgb(38, 207, 38);
     transform: scale(1.01);
 }
 
