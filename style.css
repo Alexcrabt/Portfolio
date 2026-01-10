@@ -484,16 +484,25 @@ textarea:focus {
     width: 95%;
     max-height: 70vh;
     object-fit: contain;
+    margin: 0 auto;
+    display: block;
 }
 
 .splide-snecolor-image {
     width: 95%;
     max-height: 70vh;
     object-fit: contain;
+    margin: 0 auto;
+    display: block;
 }
 
 .splide__track {
     overflow: hidden;
+}
+
+.splide__list {
+    padding: 0;
+    margin: 0;
 }
 
 #SNelight {
