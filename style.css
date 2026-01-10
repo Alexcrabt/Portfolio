@@ -469,13 +469,15 @@ textarea:focus {
 }
 
 .splide__slide a img {
-    display: block;
-    transition: box-shadow 0.25s ease;
+    transition:
+        outline 0.2s ease,
+        outline-offset 0.2s ease;
     border-radius: 4px;
 }
 
 .splide__slide a:hover img {
-    box-shadow: 0 4px 16px 0 rgb(38, 207, 38);
+    outline: 3px solid rgb(38, 207, 38);
+    outline-offset: 6px;
 }
 
 .splide-snelight-image {
