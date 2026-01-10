@@ -461,7 +461,9 @@ textarea:focus {
     flex-direction: column;
     align-items: center;
 }
-
+.splide__slide a img {
+    border-radius: 5px;
+}
 .splide__slide a img:hover {
     box-shadow: 0 4px 16px 0 rgb(38, 207, 38);
 }
