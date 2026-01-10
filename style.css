@@ -462,9 +462,7 @@ textarea:focus {
     align-items: center;
 }
 .splide__slide a img {
-    transition:
-        box-shadow 0.25s ease,
-        transform 0.2s ease;
+    transition: box-shadow 0.25s ease;
     border-radius: 4px;
 }
 
