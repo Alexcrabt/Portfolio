@@ -1,13 +1,4 @@
 
-//CANVAS IMAGE
-const canvas = document.getElementById("canvas")
-const ctx= canvas.getContext("2d")
-const img= new Image()
-img.src= "./Coffee_Space.jpg";
-img.onload = () => {ctx.drawImage(img, 0, 0, img.width, img.height
-                                    , 0, 0, canvas.width, canvas.height);};
-                          
-
 //About Me Hobby Sidebar
 function openHob() {
   const sidebar = document.getElementById('sidebar-r');
