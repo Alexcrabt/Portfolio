@@ -9,6 +9,10 @@
     outline: none;
 }
 
+html {
+    scroll-padding-top: 5.5rem;
+}
+
 html,
 body {
     background: black;
@@ -73,6 +77,9 @@ textarea:focus {
     padding: 0 2.4rem;
     color: rgb(100, 216, 255);
     background-color: transparent;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /*For Mobile Only*/
@@ -110,29 +117,31 @@ textarea:focus {
 
 /*Intro*/
 .intro {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 100%;
     min-height: 100vh;
 }
 
 .intro-text {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: rgb(100, 216, 255);
-    height: 100%;
-    padding-top: 15.625rem;
 }
 
 .intro-text h1 {
     font-size: clamp(2.5rem, 5.5vw, 5.4rem);
     font-weight: 400;
-    margin-top: -14rem;
 }
 
 .intro-text h2 {
     font-size: clamp(1.5rem, 3.5vw, 3.36rem);
     font-weight: 300;
-    margin-top: -20rem;
 }
 
 .intro-text h3 {
@@ -173,6 +182,8 @@ textarea:focus {
     border-radius: 20px;
     font-size: 1.44rem;
     width: 9.6rem;
+    min-height: 44px;
+    padding: 0.5rem 1rem;
 }
 
 .btn-hob:focus {
@@ -200,6 +211,7 @@ textarea:focus {
 
 .about-bttm {
     border-top: 0.4vh solid rgb(100, 216, 255);
+    display: flow-root;
 }
 
 #sidebar-r,
@@ -349,6 +361,8 @@ textarea:focus {
     border-radius: 20px;
     font-size: 1.44rem;
     width: 9.6rem;
+    min-height: 44px;
+    padding: 0.5rem 1rem;
 }
 
 .btn-proj {
@@ -374,6 +388,7 @@ textarea:focus {
     width: 100%;
     background: #606060;
     border-radius: 5px;
+    position: relative;
 }
 
 .card-head {
@@ -476,6 +491,7 @@ textarea:focus {
 
 .splide-snelight-image {
     width: 95%;
+    max-width: 100%;
     max-height: 70vh;
     object-fit: contain;
     margin: 0 auto;
@@ -483,6 +499,7 @@ textarea:focus {
 
 .splide-snecolor-image {
     width: 95%;
+    max-width: 100%;
     max-height: 70vh;
     object-fit: contain;
     margin: 0 auto;
@@ -634,6 +651,11 @@ footer p {
 }
 
 
+/*Mobile-only inline skills/interests (hidden on desktop)*/
+.mobile-skills-section {
+    display: none;
+}
+
 /* ==========================================================================
    Responsive — desktop-first, max-width breakpoints
    ========================================================================== */
@@ -698,9 +720,12 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    html {
+        scroll-padding-top: 55px;
+    }
     /*Navbar*/
     .nav {
-        height: 7.4%;
+        height: 55px;
     }
     .nav-text {
         display: block;
@@ -748,7 +773,7 @@ footer p {
         grid-gap: 25px;
     }
     .card {
-        height: 65vh;
+        min-height: 65vh;
     }
     .card-img {
         max-height: 30vh;
@@ -783,6 +808,9 @@ footer p {
 }
 
 @media (max-width: 576px) {
+    html {
+        scroll-padding-top: 40px;
+    }
     /*Navbar*/
     .nav {
         height: 40px;
@@ -823,8 +851,40 @@ footer p {
         font-size: 8vh;
     }
     .about-img {
-        min-width: 40vh;
-        max-height: 40vh;
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+    }
+    .btn-hob {
+        display: none;
+    }
+    .mobile-skills-section {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        padding: 1.5rem 0;
+    }
+    .mobile-skills-col {
+        flex: 1;
+        max-width: 200px;
+    }
+    .mobile-skills-col h5 {
+        font-size: 1.1rem;
+        text-decoration: underline;
+        margin-bottom: 0.5rem;
+    }
+    .mobile-skills-col ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 0.95rem;
+    }
+    .mobile-skills-col ul li {
+        padding: 0.2rem 0;
+    }
+    .mobile-skills-col ul li .iconify {
+        font-size: 1.2rem;
+        vertical-align: middle;
     }
     .about-me p {
         text-align: center;
@@ -845,6 +905,7 @@ footer p {
     .card-grid {
         grid-template-columns: 1fr;
         grid-gap: 10px;
+        margin: 15px;
     }
     .projects-text h1 {
         font-size: 8vh;
@@ -855,6 +916,10 @@ footer p {
     .card-lang {
         font-size: 2.3vh;
     }
+    /*Graphs*/
+    .splide p {
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    }
     /*Contact*/
     .contact-text h1 {
         font-size: 8vh;
@@ -862,6 +927,9 @@ footer p {
 }
 
 @media (max-width: 420px) {
+    html {
+        scroll-padding-top: 45px;
+    }
     /*Navbar*/
     .nav {
         height: 45px;
@@ -878,13 +946,9 @@ footer p {
         font-size: 4vh;
     }
     /*Intro*/
-    .intro {
-        width: 95%;
-    }
     .intro-text h1 {
         font-size: 6vh;
         font-weight: 400;
-        margin-top: -60px;
     }
     .intro-text h2 {
         font-size: 4vh;
@@ -900,8 +964,9 @@ footer p {
         font-size: 6vh;
     }
     .about-img {
-        min-width: 25vh;
-        max-height: 25vh;
+        width: 80%;
+        max-width: 300px;
+        height: auto;
     }
     .btn-hob {
         font-size: 2vh;
@@ -922,7 +987,7 @@ footer p {
     }
     .side-text {
         display: block;
-        font-size: 1vh;
+        font-size: 0.75rem;
         white-space: nowrap;
     }
     .about-sidebar li .iconify {

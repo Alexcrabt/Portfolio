@@ -38,6 +38,9 @@ function filterSelection(elem) {
 //Filter Website
 //Had idea to use project filter for filtering and displaying different parts of my website!
 function filterSelectionNavbar(elem) {
+  // On mobile let the page scroll naturally — section switching is desktop-only
+  if (window.innerWidth <= 768) return;
+
   var sect = document.getElementsByClassName("sect");
   var btn = document.getElementsByClassName("nav-btn");
 
